@@ -1,3 +1,3 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Aug 25 18:08:32 CST 2023","Fri Aug 25 18:08:43 CST 2023","11450","TestCase","test_table","Testtable1","","","test_update_package[data0]",""
-"passed","Fri Aug 25 18:08:16 CST 2023","Fri Aug 25 18:08:29 CST 2023","12689","TestCase","test_platforms","Testplatforms","","","test_promotions[data0]",""
+"passed","Tue Aug 29 10:36:19 CST 2023","Tue Aug 29 10:36:33 CST 2023","14232","TestCase","test_episodes","Testeposodes","","","test_add_file[data0]",""
+"passed","Tue Aug 29 10:36:37 CST 2023","Tue Aug 29 10:36:50 CST 2023","13900","TestCase","test_episodes","Testeposodes","","","test_add_file[data1]",""

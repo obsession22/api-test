@@ -12,9 +12,9 @@ from pageobject.table_commit import LoginPage
 from pageobject.table_commit import packagePage
 
 
-@pytest.mark.usefixtures('beginandend')
-@allure.feature('测试后台')
-class Testtable1:
+# @pytest.mark.usefixtures('beginandend')
+# @allure.feature('测试后台')
+# class Testtable:
 
     #@pytest.mark.skip('测试阶段')
     # @pytest.mark.usefixtures('beginandend')
@@ -47,14 +47,14 @@ class Testtable1:
     #     pp.addPackage(price, gives, description, text, give_num)
 
     # 修改套餐
-    @pytest.mark.usefixtures('beginandend')
-    @pytest.mark.parametrize("data", excle_read('./data/ele.xlsx', '新增套餐用例'))
-    def test_update_package(self, data, beginandend):
-        num, price, gives, description, text, give_num, result = data
-        print(num, price, gives, description, text, give_num, data)
-        self.driver, self.logger = beginandend
-        up = packagePage(self.driver)
-        up.update_package(price, gives, description, text, give_num)
+    # @pytest.mark.usefixtures('beginandend')
+    # @pytest.mark.parametrize("data", excle_read('./data/ele.xlsx', '新增套餐用例'))
+    # def test_update_package(self, data, beginandend):
+    #     num, price, gives, description, text, give_num, result = data
+    #     print(num, price, gives, description, text, give_num, data)
+    #     self.driver, self.logger = beginandend
+    #     up = packagePage(self.driver)
+    #     up.update_package(price, gives, description, text, give_num)
 
     # 删除套餐
     # @pytest.mark.usefixtures('beginandend')

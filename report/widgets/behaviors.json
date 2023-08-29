@@ -1,1 +1,1 @@
-{"total":2,"items":[{"uid":"3325f9aefc4d4a260d124dfcd0a69c8a","name":"平台管理模块","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"uid":"776480cab0494d931b83c287f53b148a","name":"测试后台","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}
+{"total":1,"items":[{"uid":"54fc1fd3afca851e70c9ec5af6947b63","name":"剧集管理模块","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}}]}

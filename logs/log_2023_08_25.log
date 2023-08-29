@@ -317,3 +317,9 @@
 [2023-08-25 18:08:31,100] conftest.py->beginToend line:17 [INFO] ----------测试用例执行开始----------
 [2023-08-25 18:08:43,771] conftest.py->beginToend line:23 [INFO] ----------测试用例执行结束----------
 
+[2023-08-25 18:18:22,763] conftest.py->beginToend line:17 [INFO] ----------测试用例执行开始----------
+[2023-08-25 18:18:36,513] conftest.py->beginToend line:23 [INFO] ----------测试用例执行结束----------
+
+[2023-08-25 18:18:38,614] conftest.py->beginToend line:17 [INFO] ----------测试用例执行开始----------
+[2023-08-25 18:18:50,482] conftest.py->beginToend line:23 [INFO] ----------测试用例执行结束----------
+
