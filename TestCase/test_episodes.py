@@ -9,9 +9,8 @@ import pytest
 from common.excle_export import excle_read
 from pageobject.episodes_page import EpisodesPage
 
-
-@pytest.mark.usefixtures('beginandend')
 @allure.feature('剧集管理模块')
+@pytest.mark.usefixtures('beginandend')
 class Testeposodes:
 
     # 新增剧集
@@ -37,8 +36,10 @@ class Testeposodes:
     #     self.driver, self.logger = beginandend
     #     ac = EpisodesPage(self.driver)
     #     ac.add_cate(cate_name, parent_id, sort, status)
-
     # 新增剧集文件
+    @allure.story('新增文件')
+    @allure.title("测试标题")
+    @allure.description('测试描述')
     @pytest.mark.usefixtures('beginandend')
     @pytest.mark.parametrize("data", excle_read('./data/ele.xlsx', '新增剧集文件用例'))
     def test_add_file(self, data, beginandend):
@@ -47,8 +48,9 @@ class Testeposodes:
                 data[i] = 'null'
         test_num, id, name, desc, sort, is_charge, price, vip_price, num, status, result = data
         self.driver, self.logger = beginandend
-        af = EpisodesPage(self.driver)
+        af = EpisodesPage(self.driver, self.logger)
         af.add_file(id, name, desc, sort, is_charge, price, vip_price, num, status)
+        # self.logger('新增文件用例'+test_num)
 
 
 

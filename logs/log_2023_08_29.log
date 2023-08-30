@@ -10,3 +10,158 @@
 [2023-08-29 10:36:35,827] conftest.py->beginToend line:17 [INFO] ----------测试用例执行开始----------
 [2023-08-29 10:36:50,926] conftest.py->beginToend line:23 [INFO] ----------测试用例执行结束----------
 
+[2023-08-29 11:29:43,469] conftest.py->beginToend line:17 [INFO] ----------测试用例执行开始----------
+[2023-08-29 11:29:49,766] conftest.py->beginToend line:23 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 13:33:18,515] conftest.py->beginToend line:17 [INFO] ----------测试用例执行开始----------
+[2023-08-29 13:33:35,136] conftest.py->beginToend line:23 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 13:33:37,222] conftest.py->beginToend line:17 [INFO] ----------测试用例执行开始----------
+[2023-08-29 13:33:51,908] conftest.py->beginToend line:23 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 14:43:47,294] conftest.py->beginToend line:18 [INFO] ----------测试用例执行开始----------
+[2023-08-29 14:44:34,923] conftest.py->beginToend line:18 [INFO] ----------测试用例执行开始----------
+[2023-08-29 14:44:57,427] conftest.py->beginToend line:18 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:05:49,085] conftest.py->beginToend line:18 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:06:01,967] conftest.py->beginToend line:25 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:06:04,836] conftest.py->beginToend line:18 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:06:17,595] conftest.py->beginToend line:25 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:13:33,200] conftest.py->beginToend line:18 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:13:43,787] conftest.py->beginToend line:25 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:13:45,874] conftest.py->beginToend line:18 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:13:56,697] conftest.py->beginToend line:25 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:19:27,899] conftest.py->beginToend line:18 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:19:42,803] conftest.py->beginToend line:25 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:19:44,940] conftest.py->beginToend line:18 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:19:59,919] conftest.py->beginToend line:25 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:33:06,122] conftest.py->beginToend line:18 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:33:10,099] conftest.py->beginToend line:25 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:33:12,150] conftest.py->beginToend line:18 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:33:17,026] conftest.py->beginToend line:25 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:35:40,561] logger_util.py-><module> line:95 [INFO] 普通信息
+[2023-08-29 15:35:40,561] logger_util.py-><module> line:97 [WARNING] 警告信息
+[2023-08-29 15:35:40,561] logger_util.py-><module> line:98 [ERROR] 错误信息
+[2023-08-29 15:35:40,561] logger_util.py-><module> line:99 [CRITICAL] 严重错误
+[2023-08-29 15:45:54,559] logger_util.py-><module> line:110 [INFO] 普通信息
+[2023-08-29 15:45:54,559] logger_util.py-><module> line:112 [WARNING] 警告信息
+[2023-08-29 15:45:54,560] logger_util.py-><module> line:113 [ERROR] 错误信息
+[2023-08-29 15:45:54,560] logger_util.py-><module> line:114 [CRITICAL] 严重错误
+[2023-08-29 15:46:16,850] logger_util.py-><module> line:110 [INFO] 普通信息
+[2023-08-29 15:46:16,851] logger_util.py-><module> line:112 [WARNING] 警告信息
+[2023-08-29 15:46:16,851] logger_util.py-><module> line:113 [ERROR] 错误信息
+[2023-08-29 15:46:16,851] logger_util.py-><module> line:114 [CRITICAL] 严重错误
+[2023-08-29 15:46:22,252] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:47:02,351] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:47:02,351] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:47:37,254] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:47:52,674] conftest.py->beginToend line:27 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:47:54,791] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:48:09,825] conftest.py->beginToend line:27 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:49:29,181] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:49:44,179] conftest.py->beginToend line:27 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:49:46,278] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:50:01,186] conftest.py->beginToend line:27 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:50:47,814] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:51:02,728] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:51:04,814] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:51:19,659] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:51:46,842] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:52:02,284] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:52:04,381] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:52:19,478] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:52:29,364] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:52:45,885] conftest.py->beginToend line:29 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:52:47,960] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 15:53:03,184] conftest.py->beginToend line:29 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 15:53:03,855] logger_util.py-><module> line:110 [INFO] 普通信息
+[2023-08-29 15:53:03,855] logger_util.py-><module> line:112 [WARNING] 警告信息
+[2023-08-29 15:53:03,855] logger_util.py-><module> line:113 [ERROR] 错误信息
+[2023-08-29 15:53:03,855] logger_util.py-><module> line:114 [CRITICAL] 严重错误
+[2023-08-29 15:53:27,308] logger_util.py-><module> line:110 [INFO] 普通信息
+[2023-08-29 15:53:27,308] logger_util.py-><module> line:112 [WARNING] 警告信息
+[2023-08-29 15:53:27,308] logger_util.py-><module> line:113 [ERROR] 错误信息
+[2023-08-29 15:53:27,308] logger_util.py-><module> line:114 [CRITICAL] 严重错误
+[2023-08-29 15:53:35,616] logger_util.py-><module> line:110 [INFO] 普通信息
+[2023-08-29 15:53:35,617] logger_util.py-><module> line:112 [WARNING] 警告信息
+[2023-08-29 15:53:35,617] logger_util.py-><module> line:113 [ERROR] 错误信息
+[2023-08-29 15:53:35,617] logger_util.py-><module> line:114 [CRITICAL] 严重错误
+[2023-08-29 15:59:47,469] logger_util.py-><module> line:110 [INFO] 普通信息
+[2023-08-29 15:59:47,470] logger_util.py-><module> line:112 [WARNING] 警告信息
+[2023-08-29 15:59:47,470] logger_util.py-><module> line:113 [ERROR] 错误信息
+[2023-08-29 15:59:47,470] logger_util.py-><module> line:114 [CRITICAL] 严重错误
+[2023-08-29 15:59:52,336] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:00:07,389] conftest.py->beginToend line:29 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:00:09,494] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:00:24,408] conftest.py->beginToend line:29 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:10:13,681] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:10:30,827] conftest.py->beginToend line:29 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:10:32,915] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:10:47,975] conftest.py->beginToend line:29 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:12:29,714] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:12:44,674] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:12:46,771] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:13:01,678] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:13:08,791] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:13:23,643] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:13:25,750] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:13:40,914] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:21:30,856] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:21:46,120] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:21:48,219] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:22:03,068] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:22:05,159] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:22:20,127] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:22:22,210] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:22:37,249] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:29:29,358] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:29:44,345] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:29:46,444] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:30:00,953] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:30:16,204] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:30:18,299] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:30:33,108] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:34:59,052] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:35:14,010] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:35:16,121] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:35:30,832] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:39:15,472] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:39:30,492] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+
+[2023-08-29 16:39:32,592] conftest.py->beginToend line:20 [INFO] ----------测试用例执行开始----------
+[2023-08-29 16:39:47,818] conftest.py->beginToend line:28 [INFO] ----------测试用例执行结束----------
+

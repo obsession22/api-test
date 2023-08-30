@@ -8,6 +8,9 @@
 """
 import logging
 import time
+
+import coloredlogs as coloredlogs
+
 from config.config_util import get_project_path, get_yaml_config
 
 
@@ -32,7 +35,7 @@ class LoggerUtil:
         print(self.log_path_and_name)
         self.file_handler=logging.FileHandler(self.log_path_and_name,encoding='utf-8')
         # 设置日志处理器日志级别
-        fileLogLevel = get_yaml_config('log','file_log_level')
+        fileLogLevel = get_yaml_config('log', 'file_log_level')
         if fileLogLevel.lower() == 'debug':
             self.file_handler.setLevel(logging.DEBUG)
         elif fileLogLevel.lower() == 'info':
@@ -92,6 +95,7 @@ class LoggerUtil:
 
 if __name__ == '__main__':
     logger = LoggerUtil().get_logger()
+    coloredlogs.install(level='DEBUG', logger=logger)
     logger.info("普通信息")
     logger.debug("调试信息")
     logger.warning("警告信息")

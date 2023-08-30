@@ -27,7 +27,7 @@ class LoginPage(BasePage):
     # login_button = (By.XPATH, '/html/body/form/div[5]/button')
 
     def login(self):
-        self.get(login_url)
+        self.load(login_url)
         time.sleep(2)
         self.send_keys(username_key, username)
         self.send_keys(password_key, password)

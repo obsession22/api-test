@@ -1,6 +1,6 @@
 ##浏览器选择(不区分大小写，谷歌浏览器：Chrome；火狐浏览器：Firefox；IE浏览器:Ie)
 browser:
-    browser_name:
+    browser_name: Chrome
 
 #全局基本路径和被测项目地址
 url:
