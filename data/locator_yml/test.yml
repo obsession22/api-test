@@ -1,0 +1,16 @@
+- name: login_button
+  locator_type: id
+  locator_value: loginButton
+  action: click
+
+- name: username_input
+  locator_type: xpath
+  locator_value: //input[@id='username']
+  action: input
+  value: username
+
+- name: password_input
+  locator_type: css
+  locator_value: input#password
+  action: input
+  value: password

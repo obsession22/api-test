@@ -10,6 +10,7 @@ class BasePage:
     def __init__(self, driver, logger):
         self.driver = driver
         self.logger = logger
+        print(1)
 
     # 加载网页
     def load(self, url):
@@ -153,14 +154,4 @@ class BasePage:
 
 
 
-    def webexe(self, yml_name):
 
-        # 元素定位加载
-        with open(yml_name, 'r') as file:
-            locator_steps = yaml.safe_load(file)
-
-        # 执行测试步骤
-        for locator in locator_steps:
-            locator_type = locator.get('locator_type')
-            locator_value = locator.get('locator_type')
-            action = locator.get('action')

@@ -25,7 +25,7 @@ from pageobject.platforms_page import PlatformPage
 #                 print(data[i])
 #         test_num, ID, vedio_id, episodes_id, user_id, set_id, pay_id, result = data
 #         self.driver, self.logger = beginandend
-#         p = PlatformPage(self.driver)
+#         p = PlatformPage(self.driver, self.logger)
 #         p.query_promotions(ID, vedio_id, episodes_id, user_id, set_id, pay_id)
 
 

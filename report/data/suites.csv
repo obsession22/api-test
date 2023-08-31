@@ -1,3 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Aug 30 14:29:47 CST 2023","Wed Aug 30 14:30:01 CST 2023","14220","TestCase","test_episodes","Testeposodes","","","测试标题","测试描述"
-"passed","Wed Aug 30 14:30:04 CST 2023","Wed Aug 30 14:30:18 CST 2023","14201","TestCase","test_episodes","Testeposodes","","","测试标题","测试描述"
+"passed","Thu Aug 31 18:27:26 CST 2023","Thu Aug 31 18:27:33 CST 2023","6683","TestCase","test_login","Testedemo","","","测试标题","测试描述"

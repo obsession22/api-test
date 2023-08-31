@@ -1,0 +1,32 @@
+# 页面元素
+elements:
+  - name: username_input
+    type: id
+    value: username
+
+  - name: password_input
+    type: id
+    value: password
+
+  - name: login_button
+    type: xpath
+    value: //button[contains(text(), 'Login')]
+
+# 页面操作
+operations:
+  - name: enter_username
+    element: username_input
+    action: input
+    value: testuser
+    order: 1
+
+  - name: enter_password
+    element: password_input
+    action: input
+    value: testpassword
+    order: 2
+
+  - name: click_login
+    element: login_button
+    action: click
+    order: 3
