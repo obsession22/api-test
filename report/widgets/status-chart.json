@@ -1,1 +1,1 @@
-[{"uid":"d8fd98bfb054a35b","name":"测试标题","time":{"start":1693559791044,"stop":1693559795536,"duration":4492},"status":"passed","severity":"normal"}]
+[{"uid":"b674ab91f5387e62","name":"测试标题","time":{"start":1693560449444,"stop":1693560453886,"duration":4442},"status":"passed","severity":"normal"},{"uid":"bdc9db41cda2ce03","name":"测试标题","time":{"start":1693560446028,"stop":1693560446028,"duration":0},"status":"broken","severity":"normal"}]
