@@ -17,13 +17,13 @@ class Testedemo:
     @allure.title("测试标题")
     @allure.description('测试描述')
     @pytest.mark.usefixtures('beginandend')
-    @pytest.mark.parametrize("data", excle_read('./data/ele.xlsx', 'demo'))
-    def test_add_file(self, data, beginandend):
+    # @pytest.mark.parametrize("data", excle_read('./data/ele.xlsx', 'demo'))
+    def test_add_file(self,  beginandend):
 
-        for i in range(len(data)):
-            if data[i] is None:
-                data[i] = 'null'
-        case_num, title =data
+        # for i in range(len(data)):
+        #     if data[i] is None:
+        #         data[i] = 'null'
+        # case_num, title =data
         self.driver, self.logger = beginandend
         l = Login(self.driver, self.logger)
-        l.login(self,title)
+        l.login(self)
