@@ -7,7 +7,6 @@ from pageobject.login_page import Login
 class UserInfo(Base):
     # 修改个人信息
     def update_user_info(self, logger, username, tel_number, mail_number, text):
-
         # 进入首页
         login =Login()
         login.login(logger)

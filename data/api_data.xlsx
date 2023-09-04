@@ -1,0 +1,9 @@
+用例编号	用例标题	请求头	请求方式	url	参数类型	请求数据
+test001	用户登录	"{'Accept': 'application/json, text/plain, */*',
+                  'Accept-Language': 'zh_CN',
+                  'Authorization': 'Bearer null',
+                  'Origin': 'http://xctestadmin.xczxwe.com',
+                  'Proxy-Connection': 'keep-alive',
+                  'Referer': 'http://xctestadmin.xczxwe.com/',
+                  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+                  'Content-Type': 'application/json;charset=UTF-8}'}"	post	http://xctestadmin.xczxwe.com/prod/system/login'	json	"{""username"": ""冯苗志"", ""password"": ""123456""}"

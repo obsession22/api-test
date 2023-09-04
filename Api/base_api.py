@@ -5,18 +5,19 @@ import requests
 
 class BaseApi:
 
-    def base_get(self, url, header=None, params=None):
+    def base_get(self, url, headers=None, params=None):
 
-        requests.get(url, header=header, params=params)
+       return requests.get(url, headers=headers, params=params)
 
-    def base_post(self, url, header=None, data=None, json=None):
+    def base_post(self, url, headers=None, data=None, json=None):
 
-        requests.post(url, header=header, data=data, json=json)
+       return requests.post(url,   json=json, data=data, headers=headers)
 
-    def api(self, method, url, header=None, params=None, data=None, json=None):
-        if method =='GET':
-            self.base_get(url, header=header, params=params)
+    def api(self, method, url, headers=None, data=None, params=None, json=None):
+
+        if method == 'GET':
+           return self.base_get(url, headers=headers, params=params)
         elif method == 'POST':
-            self.base_post(url, header=header, data=data, json=json)
+           return self.base_post(url, headers=headers, data=data, json=json)
         else:
             print('请输入"GET"或者"POST"')
