@@ -12,6 +12,7 @@ from selenium import webdriver
 from utils.logger_util import LoggerUtil
 from utils.config_util import get_config_browser
 
+
 @pytest.fixture(name='beginandend')
 def beginToend():
     lu = LoggerUtil()
@@ -26,11 +27,24 @@ def beginToend():
     logger.info("----------测试用例执行开始----------")
     global driver
     driver = get_config_browser()
-    # driver = webdriver.Chrome()
-    # driver = webdriver.Firefox()
-    # driver.maximize_window()
     yield (driver,logger)
     print()
     logger.info("----------测试用例执行结束----------\n")
     driver.quit()
+    lu.remove_handler()
+
+
+@pytest.fixture(name='api_log')
+def api_log():
+    lu = LoggerUtil()
+    logger = lu.get_logger()
+    logger.handlers.clear()
+    coloredlogs.install(level='DEBUG', logger=logger,
+                        level_styles={'info': {'color': 'green'},
+                                      'warning': {'color': 'yellow'},
+                                      'error': {'color': 'red'},
+                                      'critical': {'color': 'red', 'bold': True}})
+    logger.info("----------测试用例执行开始----------")
+    yield logger
+    logger.info("----------测试用例执行结束----------\n")
     lu.remove_handler()
