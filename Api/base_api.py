@@ -34,6 +34,8 @@ class BaseApi:
         self.logger.info('用例编号：'+case_num)
         self.logger.info('用例标题：'+case_title)
 
+
+
         # 在请求头中设置token
         token = get_yaml_config('API', 'token')
         headers = json_util.loads(headers)
@@ -60,12 +62,16 @@ class BaseApi:
             data = request_data
         if method == 'GET':
             result = self.base_get(url, headers=headers, params=params)
+            # 断言
             if assertion_condition is not None:
+                self.logger.info('断言表达式：' + assertion_condition)
                 assert eval(assertion_condition), assertion_message
             return result
         elif method == 'POST':
             result = self.base_post(url, headers=headers, data=data, json=json)
+            # 断言
             if assertion_condition is not None:
+                self.logger.info('断言表达式：' + assertion_condition)
                 assert eval(assertion_condition), assertion_message
             return result
         else:

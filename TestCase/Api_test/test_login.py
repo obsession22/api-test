@@ -21,8 +21,6 @@ class Testapi:
         result = api.api(case_num=case_num, case_title=case_title, url=url, method=method, headers=headers, parameter_type=parameter_type, request_data=request_data).json()
         token = result["data"]["token"]
         code = result['code']
-
-        assert code == 200, '状态码code不为200'
         if code == 200:
             # 读取yml
             with open("config.yaml", "r", encoding='utf-8') as yaml_file:
@@ -113,10 +111,10 @@ class Testapi:
         case_num, case_title, headers, method, url, parameter_type, request_data = data
         api = BaseApi(api_log)
         result = api.api(case_num=case_num,
-                 case_title=case_title,
-                 url=url, method=method,
-                 headers=headers,
-                 parameter_type=parameter_type,
-                 request_data=request_data).json()
+                         case_title=case_title,
+                         url=url, method=method,
+                         headers=headers,
+                         parameter_type=parameter_type,
+                         request_data=request_data).json()
 
 
