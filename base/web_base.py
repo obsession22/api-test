@@ -48,11 +48,6 @@ class Base:
     # 设置值
     def send_key(self, types, locate, text):
         self.find_elements(types, locate).send_keys(text)
-       # elements = self.find_elements(types, locate)
-       # print(elements)
-       # for element in elements:
-       #     print(element)
-       #     element.send_keys(text)
 
     # 清除值
     def clear_value(self, types, locate):
@@ -166,7 +161,7 @@ class Base:
         else:
             raise Exception('定位类型错误！！！！')
 
-    def web_execution(self, types, locate, text = None, notes =None, operate =None):
+    def web_execution(self, types, locate, text=None, notes=None, operate=None):
 
         types = self.web_by(types)
 
@@ -210,14 +205,18 @@ class Base:
                 return self.web_url()
 
     def web_exe(self, yaml_file, case_data, text=None):
-
+        """
+        :param yaml_file:  用例文件（只需调用该方法时输入__file__，需注意调用该方法的py文件名和data/locator/文件夹下的对应部分用例yml的文件名一样
+        :param case_data:  用例名称 yml用例中的参数 casename
+        :param text:   输入的用例参数
+        :return:
+        """
+        # 后缀名称转化
         yaml = replace_py_yaml(yaml_file)
-
         locator_data = self.get_case(yaml, case_data)
 
-
         locator_step = locator_data.stepCount()
-
+        # 遍历测试yml中的测试用例，用例操作步骤
         for locator in range(locator_step):
 
             if locator_data.operate(locator) in ('input'):

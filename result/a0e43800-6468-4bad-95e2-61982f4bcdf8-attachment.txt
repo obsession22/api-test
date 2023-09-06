@@ -1,0 +1,7 @@
+INFO     测试:conftest.py:47 ----------测试用例执行开始----------
+INFO     测试:base_api.py:57 用例编号：test001
+INFO     测试:base_api.py:58 用例标题：获取用户权限信息
+INFO     测试:base_api.py:64 参数类型为None
+INFO     测试:base_api.py:65 请求参数：None
+INFO     测试:base_api.py:66 请求地址：http://xctestadmin.xczxwe.com/prod/system/getInfo
+INFO     测试:conftest.py:49 ----------测试用例执行结束----------

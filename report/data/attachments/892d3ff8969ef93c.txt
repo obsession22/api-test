@@ -1,0 +1,11 @@
+INFO     测试:conftest.py:47 ----------测试用例执行开始----------
+INFO     测试:base_api.py:57 用例编号：test
+INFO     测试:base_api.py:58 用例标题：查询素材数据列表
+INFO     测试:base_api.py:62 参数类型：params
+INFO     测试:base_api.py:65 请求参数：{"page":"1",
+"pageSize":"10",
+"material_id":"",
+"material.title":""}
+INFO     测试:base_api.py:66 请求地址：http://xctestadmin.xczxwe.com//prod/oc/materialStatistics/index
+INFO     测试:base_api.py:25 接口返回值：{'success': True, 'message': '请求成功', 'code': 200, 'data': {'items': [{'id': 1282, 'material_id': '6875882352018259976', 'cost': '73.38', 'show_cnt': 3392, 'convert_cnt': 1, 'stat_time': '2023-09-01', 'material': None}, {'id': 1283, 'material_id': '6853697642054156295', 'cost': '38.58', 'show_cnt': 22400, 'convert_cnt': 0, 'stat_time': '2023-09-01', 'material': None}, {'id': 1284, 'material_id': '6730497947791310851', 'cost': '3.75', 'show_cnt': 206, 'convert_cnt': 0, 'stat_time': '2023-09-01', 'material': None}, {'id': 1285, 'material_id': '6871479664427991052', 'cost': '46.98', 'show_cnt': 169, 'convert_cnt': 0, 'stat_time': '2023-09-01', 'material': None}, {'id': 1286, 'material_id': '6768986555975499789', 'cost': '631.59', 'show_cnt': 10787, 'convert_cnt': 4, 'stat_time': '2023-09-01', 'material': None}, {'id': 1287, 'material_id': '6894120657878106125', 'cost': '1431.19', 'show_cnt': 29415, 'convert_cnt': 40, 'stat_time': '2023-09-01', 'material': None}, {'id': 1288, 'material_id': '6895685150450581517', 'cost': '63.43', 'show_cnt': 9239, 'convert_cnt': 1, 'stat_time': '2023-09-01', 'material': None}, {'id': 1289, 'material_id': '6905789285771788296', 'cost': '33.65', 'show_cnt': 7507, 'convert_cnt': 0, 'stat_time': '2023-09-01', 'material': None}, {'id': 1290, 'material_id': '6907142944257572877', 'cost': '7100.25', 'show_cnt': 10198, 'convert_cnt': 50, 'stat_time': '2023-09-01', 'material': None}, {'id': 1291, 'material_id': '6914469543105265672', 'cost': '1842.99', 'show_cnt': 2871, 'convert_cnt': 18, 'stat_time': '2023-09-01', 'material': None}], 'pageInfo': {'total': 3901, 'currentPage': 1, 'totalPage': 391}}}
+INFO     测试:conftest.py:49 ----------测试用例执行结束----------
