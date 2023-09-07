@@ -16,6 +16,18 @@ def excle_read(excle_url, sheet_name):
     return all_list
 
 
+def read_all_excel_data(excel_url):
+    data = {}
+    # 加载工作簿
+    workbook = openpyxl.load_workbook(excel_url, data_only=True)
+
+    for sheet_name in workbook.sheetnames:
+        sheet_data = excle_read(excel_url, sheet_name)
+        data[sheet_name] = sheet_data
+    return data
+
+
 if __name__ == '__main__':
-    print(excle_read("../data/ele.xlsx", "Sheet1"))
+    # print(excle_read("../data/ele.xlsx", "Sheet1"))
+    print(read_all_excel_data('../data/api_test.xlsx'))
 

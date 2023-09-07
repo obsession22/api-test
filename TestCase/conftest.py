@@ -6,6 +6,7 @@
 @Time : 2022/5/4 11:17
 @Motto:Don't ever let somebody tell you you can't do something
 """
+
 import coloredlogs
 import pytest
 from selenium import webdriver

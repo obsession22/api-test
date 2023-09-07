@@ -28,7 +28,7 @@ class BaseApi:
             self.logger.error("请求失败，没接收到返回值，请检查用例格式是否填写正确")
 
     def api(self, case_num, case_title, method, url,  parameter_type,
-            assertion_message=None, assertion_condition=None, headers=None, request_data=None):
+            assertion_condition=None, headers=None, request_data=None):
         """
         get、post通用api
         :param case_num: 测试用例编号
@@ -63,12 +63,11 @@ class BaseApi:
         else:
             self.logger.info("参数类型为None")
         self.logger.info("请求参数："+str(request_data))
+        self.logger.info("请求类型：" + method)
         self.logger.info("请求地址："+url)
-
         # 转换类型
         if request_data is not None:
             request_data = json_util.loads(request_data)
-
         json_data = None
         params = None
         data = None
@@ -83,7 +82,16 @@ class BaseApi:
 
         result = self.send_request(method, url, headers=headers, params=params, data=data, json=json_data)
 
+        # if assertion_condition is not None:
+        #     assert eval(assertion_condition), assertion_message
+
         if assertion_condition is not None:
-            assert eval(assertion_condition), assertion_message
+            assertions = json_util.loads(assertion_condition)
+            # 迭代执行断言条件
+            for assertion in assertions:
+                condition = assertion.get('condition')
+                message = assertion.get('message')
+                if condition is not None:
+                    assert eval(condition), message
         return result
 

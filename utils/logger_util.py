@@ -32,7 +32,7 @@ class LoggerUtil:
     # 创建文件日志
     def create_file_log(self):
         # 使用FileHandler创建文件日志处理器对象，向指定文件输出日志信息。
-        print(self.log_path_and_name)
+        # print(self.log_path_and_name)
         self.file_handler=logging.FileHandler(self.log_path_and_name,encoding='utf-8')
         # 设置日志处理器日志级别
         fileLogLevel = get_yaml_config('log', 'file_log_level')

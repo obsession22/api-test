@@ -1,8 +1,0 @@
-INFO     测试:conftest.py:47 ----------测试用例执行开始----------
-INFO     测试:base_api.py:57 用例编号：test001
-INFO     测试:base_api.py:58 用例标题：用户登录
-INFO     测试:base_api.py:62 参数类型：json
-INFO     测试:base_api.py:65 请求参数：{"username":"冯苗志","password":"123456","code":"wa4b"}
-INFO     测试:base_api.py:66 请求地址：http://xctestadmin.xczxwe.com/prod/system/login
-INFO     测试:base_api.py:25 接口返回值：{'success': True, 'message': '请求成功', 'code': 200, 'data': {'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkZWZhdWx0XzE1IiwiaWF0IjoxNjkzOTg0NzIyLjgyOTQ3NywibmJmIjoxNjkzOTg0NzIyLjgyOTQ3NywiZXhwIjoxNjkzOTkxOTIyLjgyOTQ3NywiaWQiOjE1LCJ1c2VybmFtZSI6IuWGr-iLl-W_lyIsInVzZXJfdHlwZSI6IjEwMCIsIm5pY2tuYW1lIjoiMTExIiwicGhvbmUiOiIxMjMiLCJlbWFpbCI6IjIxMyIsImF2YXRhciI6bnVsbCwic2lnbmVkIjoiMTIzIiwiZGFzaGJvYXJkIjpudWxsLCJkZXB0X2lkIjpudWxsLCJzdGF0dXMiOjEsImxvZ2luX2lwIjoiMTE2LjIxLjEzLjg0IiwibG9naW5fdGltZSI6IjIwMjMtMDktMDUgMTE6NTc6NTUiLCJiYWNrZW5kX3NldHRpbmciOm51bGwsImNyZWF0ZWRfYnkiOjEsInVwZGF0ZWRfYnkiOjE1LCJjcmVhdGVkX2F0IjoiMjAyMy0wOS0wMSAwOTo1NDoxOSIsInVwZGF0ZWRfYXQiOiIyMDIzLTA5LTA1IDExOjU3OjU1IiwicmVtYXJrIjpudWxsLCJjb2RlIjoiIiwiand0X3NjZW5lIjoiZGVmYXVsdCJ9.QO7HIVkwbpFQpEp2Waeb6X7qO2REZ2gSdbyTHn0qRfM'}}
-INFO     测试:conftest.py:49 ----------测试用例执行结束----------
