@@ -3,10 +3,9 @@
 
 @Author : fmz
 @Time : 2023/9/7 17:29
-@File : test_1.py
+@File : zip_util.py
 """
 import os
-import time
 import zipfile
 from utils.send_email import Mail
 
