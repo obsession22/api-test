@@ -21,20 +21,21 @@ def get_project_path():
 # 读取yaml配置文件
 def get_yaml_config(one_name,two_name):
     '''全局：读取全局配置yaml文件'''
-    with open(str(get_project_path())+'\\' + 'config.yaml','r',encoding='utf-8') as f:
+    with open(str(get_project_path())+'\\' + 'config.yaml', 'r',encoding='utf-8') as f:
         # cfg = yaml.load(f.read(), Loader=yaml.FullLoader)
-        cfg=yaml.safe_load(f.read())
+        cfg = yaml.safe_load(f.read())
         return cfg[one_name][two_name]
 
-
-# 获得配置文件config.ini中的浏览器信息，返回driver对象。
+# 获得配置文件config.yaml中的浏览器信息，返回driver对象。
 def get_config_browser():
-    browserName = get_yaml_config('browser','browser_name')
+    browser_name = get_yaml_config('browser','browser_name')
     global driver
-    if browserName.lower() == "chrome":
+    if browser_name.lower() == "chrome":
         driver = webdriver.Chrome()
-    elif browserName.lower() == "firefox":
+    elif browser_name.lower() == "firefox":
         driver = webdriver.Firefox()
+    elif browser_name.lower() == "edge":
+        driver = webdriver.Edge()
     else:
         driver = webdriver.Ie()
     return driver

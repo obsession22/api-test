@@ -14,6 +14,8 @@ import os
 from utils.send_email import Mail
 from utils.zip_util import zip_folder
 from utils.send_feishu import Message
+import shutil
+
 
 if __name__ == '__main__':
     plugin = JSONReport()
@@ -21,11 +23,15 @@ if __name__ == '__main__':
     pytest.main(['-vs', './TestCase', '--alluredir=./result', '--clean-alluredir'], plugins=[plugin])
     summary = plugin.report.get("summary")
     use_time = plugin.report.get("duration")
-    print(summary)
-    # print(str(plugin.report))
     time.sleep(1)
     # 生成allure报告
-    os.system('allure generate ./result ')
+    os.system('allure generate ./result -o ./report --clean')
+
+    # 添加allure启动脚本
+    shutil.copy("run_report.bat", "./report")
+    # 添加测试用例
+    shutil.copy("./data/api_test.xlsx", "./report")
+
     # os.system('allure open ./report ')
     # os.system('allure serve ./result -o ./report --clean')
 
@@ -40,7 +46,7 @@ if __name__ == '__main__':
 
     # 飞书通知
     msg = Message()
-    msg.feishu_message(summary)
+    msg.feishu_message(summary, use_time, data_time)
 
     # 删除临时的zip文件
     os.remove(zip_filename)

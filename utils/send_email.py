@@ -38,7 +38,7 @@ class Mail:
                         f"failed用例数量：{case_failed}\n"
                         f"skipped用例数量：{case_skipped}\n"
                         f"error用例的数量：{case_error}\n"
-                        f"执行时间：{use_time}秒\n"
+                        f"执行时长：{use_time}秒\n"
                         f"任务执行时间：{data_time}", 'plain')
         msg.attach(text)
 

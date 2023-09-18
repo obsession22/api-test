@@ -1,0 +1,17 @@
+INFO     测试:conftest.py:48 ----------测试用例执行开始----------
+INFO     测试:base_api.py:57 用例编号：test-9
+INFO     测试:base_api.py:58 用例标题：根据日期（有效日期—无效日期）
+查询账号数据
+INFO     测试:base_api.py:60 断言表达式：[{"condition":"result.json()['code'] == 200","message":"code不为200"},
+{"condition":"len(result.json()['data'])>0","message":"data不为空"}]
+INFO     测试:base_api.py:62 参数类型：params
+INFO     测试:base_api.py:65 请求参数：{"page":"1",
+"pageSize":"10",
+"stat_time[0]":"2023-09-01",
+"stat_time[1]":"2023-10-31",
+"advertiser_id":"",
+"advertiser_name":""}
+INFO     测试:base_api.py:66 请求类型：GET
+INFO     测试:base_api.py:67 请求地址：http://xctestadmin.xczxwe.com//prod/oc/accountStatistics/index
+INFO     测试:base_api.py:25 接口返回值：{'success': True, 'message': '请求成功', 'code': 200, 'data': {'items': [{'advertiser_id': '1764199942539341', 'sum_click_cnt': 14246, 'sum_convert_cnt': 298, 'sum_show_cnt': 373763, 'sum_stat_cost': '10064.24', 'advertiser_name': '点众-M-广州星橙-天真-09-c4'}, {'advertiser_id': '1764199943780360', 'sum_click_cnt': 6251, 'sum_convert_cnt': 196, 'sum_show_cnt': 129420, 'sum_stat_cost': '15531.29', 'advertiser_name': '点众-M-广州星橙-神豪赫天真-09-2'}, {'advertiser_id': '1769829290241037', 'sum_click_cnt': 3643, 'sum_convert_cnt': 231, 'sum_show_cnt': 152459, 'sum_stat_cost': '42763.22', 'advertiser_name': '阅文-xie-广西星橙-24-弃妃要休夫常规'}, {'advertiser_id': '1766584535392333', 'sum_click_cnt': 11071, 'sum_convert_cnt': 256, 'sum_show_cnt': 201302, 'sum_stat_cost': '17281.80', 'advertiser_name': '点众-M-广州星橙-神豪赫天真-09-3'}, {'advertiser_id': '1759324895667214', 'sum_click_cnt': 6655, 'sum_convert_cnt': 222, 'sum_show_cnt': 102848, 'sum_stat_cost': '7838.30', 'advertiser_name': '阅文-小陈-桃桃乐-测试户-小莹-01'}, {'advertiser_id': '1770662838861832', 'sum_click_cnt': 18535, 'sum_convert_cnt': 226, 'sum_show_cnt': 396872, 'sum_stat_cost': '12889.59', 'advertiser_name': '点众-小陈-星橙-微信-低价-测试户-01'}, {'advertiser_id': '1771212381557838', 'sum_click_cnt': 3246, 'sum_convert_cnt': 119, 'sum_show_cnt': 75067, 'sum_stat_cost': '3732.51', 'advertiser_name': '星橙-pan-梓鑫-反派开挂-低价-04'}, {'advertiser_id': '1759323807229000', 'sum_click_cnt': 5666, 'sum_convert_cnt': 44, 'sum_show_cnt': 89695, 'sum_stat_cost': '5030.77', 'advertiser_name': '点众-小陈-星橙-顶级赘婿-低价【9.15-02】'}, {'advertiser_id': '1770661905497096', 'sum_click_cnt': 25945, 'sum_convert_cnt': 191, 'sum_show_cnt': 522122, 'sum_stat_cost': '15071.99', 'advertiser_name': '点众-王祺旭-星橙-【新测试户】-低价-02'}, {'advertiser_id': '1770661906973774', 'sum_click_cnt': 11553, 'sum_convert_cnt': 123, 'sum_show_cnt': 171124, 'sum_stat_cost': '5413.99', 'advertiser_name': '点众-王祺旭-星橙-【新测试户】-低价-04'}], 'pageInfo': {'total': 1443, 'currentPage': '1', 'totalPage': 145}}}
+INFO     测试:conftest.py:50 ----------测试用例执行结束----------

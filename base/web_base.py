@@ -226,7 +226,6 @@ class Base:
                                    text=text,
                                    notes=locator_data.info(locator)
                                    )
-
             else:
                 self.web_execution(types=locator_data.types(locator),
                                    locate=locator_data.locate(locator),

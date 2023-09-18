@@ -1,0 +1,12 @@
+INFO     测试:conftest.py:48 ----------测试用例执行开始----------
+INFO     测试:base_api.py:57 用例编号：test04
+INFO     测试:base_api.py:58 用例标题：根据巨量广告名称
+查询广告账号数据
+INFO     测试:base_api.py:60 断言表达式：[{"condition":"result.json()['code'] == 200","message":"code不为200"},
+{"condition":"len(result.json()['data'])>0","message":"data不为空"}]
+INFO     测试:base_api.py:62 参数类型：params
+INFO     测试:base_api.py:65 请求参数：{"page":"1","pageSize":"10","advertiser_id":"","tt_id":"","advertiser_name":"楚泽恩-ZN-主户（禁止投放&禁止绑定）"}
+INFO     测试:base_api.py:66 请求类型：GET
+INFO     测试:base_api.py:67 请求地址：http://xctestadmin.xczxwe.com/prod/oc/advertiser/index
+INFO     测试:base_api.py:25 接口返回值：{'success': True, 'message': '请求成功', 'code': 200, 'data': {'items': [{'id': 3, 'advertiser_id': 1762144929589256, 'advertiser_name': '楚泽恩-ZN-主户（禁止投放&禁止绑定）', 'tt_id': 2278618719337208, 'active_status': 2}], 'pageInfo': {'total': 1, 'currentPage': 1, 'totalPage': 1}}}
+INFO     测试:conftest.py:50 ----------测试用例执行结束----------

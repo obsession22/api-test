@@ -1,0 +1,15 @@
+INFO     测试:conftest.py:48 ----------测试用例执行开始----------
+INFO     测试:base_api.py:57 用例编号：test03
+INFO     测试:base_api.py:58 用例标题：根据广告主ID
+查询广告账号数据
+INFO     测试:base_api.py:60 断言表达式：[{"condition":"result.json()['code'] == 200","message":"code不为200"},
+{"condition":"len(result.json()['data'])>0","message":"data不为空"}]
+INFO     测试:base_api.py:62 参数类型：params
+INFO     测试:base_api.py:65 请求参数：{"page":"1","pageSize":"10",
+"advertiser_id":"",
+"tt_id":"2278618719337208",
+"advertiser_name":""}
+INFO     测试:base_api.py:66 请求类型：GET
+INFO     测试:base_api.py:67 请求地址：http://xctestadmin.xczxwe.com/prod/oc/advertiser/index
+INFO     测试:base_api.py:25 接口返回值：{'success': True, 'message': '请求成功', 'code': 200, 'data': {'items': [{'id': 2, 'advertiser_id': 1765143972750414, 'advertiser_name': '星橙-pan-楚泽恩-我有神仙微信群', 'tt_id': 2278618719337208, 'active_status': 2}, {'id': 3, 'advertiser_id': 1762144929589256, 'advertiser_name': '楚泽恩-ZN-主户（禁止投放&禁止绑定）', 'tt_id': 2278618719337208, 'active_status': 2}, {'id': 4, 'advertiser_id': 1765143971482632, 'advertiser_name': '（0506）楚泽恩-98', 'tt_id': 2278618719337208, 'active_status': 2}, {'id': 6, 'advertiser_id': 1771212384546830, 'advertiser_name': '看剧吧抖小测试', 'tt_id': 2278618719337208, 'active_status': 2}, {'id': 8, 'advertiser_id': 1765143970831374, 'advertiser_name': '（0506）楚泽恩-97', 'tt_id': 2278618719337208, 'active_status': 2}, {'id': 10, 'advertiser_id': 1771212383908878, 'advertiser_name': '星橙-pan-梓鑫-反派开挂-低价-01', 'tt_id': 2278618719337208, 'active_status': 2}, {'id': 12, 'advertiser_id': 1765143970194445, 'advertiser_name': '（0506）楚泽恩-96', 'tt_id': 2278618719337208, 'active_status': 2}, {'id': 14, 'advertiser_id': 1771212383236109, 'advertiser_name': '星橙-pan-梓鑫-反派开挂-低价-02', 'tt_id': 2278618719337208, 'active_status': 2}, {'id': 16, 'advertiser_id': 1765143969547272, 'advertiser_name': '（0506）楚泽恩-95', 'tt_id': 2278618719337208, 'active_status': 2}, {'id': 19, 'advertiser_id': 1771212382130247, 'advertiser_name': '星橙-pan-梓鑫-反派开挂-低价-03', 'tt_id': 2278618719337208, 'active_status': 2}], 'pageInfo': {'total': 562, 'currentPage': 1, 'totalPage': 57}}}
+INFO     测试:conftest.py:50 ----------测试用例执行结束----------

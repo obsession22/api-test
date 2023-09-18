@@ -11,7 +11,7 @@ class UserInfo(Base):
         login =Login()
         login.login(logger)
         # 点击个人信息导航栏
-        self.web_exe()
+        self.web_exe(__file__, 'login_click')
         # 输入昵称
         self.web_exe()
         # 输入手机号码

@@ -1,0 +1,15 @@
+INFO     测试:conftest.py:48 ----------测试用例执行开始----------
+INFO     测试:base_api.py:57 用例编号：test-7
+INFO     测试:base_api.py:58 用例标题：根据计划名称（es中不包含该词组）
+查询计划数据
+INFO     测试:base_api.py:60 断言表达式：[{"condition":"result.json()['code'] == 200","message":"code不为200"},
+{"condition":"len(result.json()['data']['items'])==0 ","message":"查询目标的返回值需为空"}]
+INFO     测试:base_api.py:62 参数类型：params
+INFO     测试:base_api.py:65 请求参数：{"page":"1",
+"pageSize":"10",
+"cdp_promotion_id":"123",
+"plan_name":""}
+INFO     测试:base_api.py:66 请求类型：GET
+INFO     测试:base_api.py:67 请求地址：http://xctestadmin.xczxwe.com//prod/oc/planStatistics/index
+INFO     测试:base_api.py:25 接口返回值：{'success': True, 'message': '请求成功', 'code': 200, 'data': {'items': [], 'pageInfo': {'total': 0, 'currentPage': '1', 'totalPage': 0}}}
+INFO     测试:conftest.py:50 ----------测试用例执行结束----------

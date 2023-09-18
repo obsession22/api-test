@@ -1,0 +1,16 @@
+INFO     测试:conftest.py:48 ----------测试用例执行开始----------
+INFO     测试:base_api.py:57 用例编号：test-9
+INFO     测试:base_api.py:58 用例标题：根据计划日期（有效日期-无效日期）
+查询计划数据
+INFO     测试:base_api.py:60 断言表达式：[{"condition":"result.json()['code'] == 200","message":"code不为200"},{"condition":"len(result.json()['data'])>0","message":"data不为0"}]
+INFO     测试:base_api.py:62 参数类型：params
+INFO     测试:base_api.py:65 请求参数：{"page":"1",
+"pageSize":"10",
+"stat_time[0]":"2023-09-18",
+"stat_time[1]":"2023-10-26",
+"cdp_promotion_id":"",
+"plan_name":""}
+INFO     测试:base_api.py:66 请求类型：GET
+INFO     测试:base_api.py:67 请求地址：http://xctestadmin.xczxwe.com//prod/oc/planStatistics/index
+INFO     测试:base_api.py:25 接口返回值：{'success': True, 'message': '请求成功', 'code': 200, 'data': {'items': [{'cdp_promotion_id': '7278980454903840827', 'sum_click_cnt': 66, 'sum_convert_cnt': 0, 'sum_show_cnt': 1504, 'sum_stat_cost': '27.38', 'plan_name': '顶级赘婿【最优成本-0915-01】'}, {'cdp_promotion_id': '7279207863926915111', 'sum_click_cnt': 2631, 'sum_convert_cnt': 118, 'sum_show_cnt': 53752, 'sum_stat_cost': '5202.11', 'plan_name': '9.16-爱情22-507988411_01'}, {'cdp_promotion_id': '7278980400683614227', 'sum_click_cnt': 113, 'sum_convert_cnt': 1, 'sum_show_cnt': 2118, 'sum_stat_cost': '55.63', 'plan_name': '顶级赘婿【最优成本-0915-01】'}, {'cdp_promotion_id': '7278980456690647099', 'sum_click_cnt': 28, 'sum_convert_cnt': 0, 'sum_show_cnt': 476, 'sum_stat_cost': '25.23', 'plan_name': '顶级赘婿【最优成本-0915-01】'}, {'cdp_promotion_id': '7278994478126645285', 'sum_click_cnt': 133, 'sum_convert_cnt': 0, 'sum_show_cnt': 2413, 'sum_stat_cost': '34.08', 'plan_name': '神豪郝天真【最优成本-0915-01】'}, {'cdp_promotion_id': '7278505520095412282', 'sum_click_cnt': 200, 'sum_convert_cnt': 10, 'sum_show_cnt': 4701, 'sum_stat_cost': '1323.10', 'plan_name': '销售线索-9.10-高价-39140-天降龙医【常规】有转化素材改_05_04_01_01_01_01'}, {'cdp_promotion_id': '7278995540552368191', 'sum_click_cnt': 34, 'sum_convert_cnt': 1, 'sum_show_cnt': 698, 'sum_stat_cost': '59.42', 'plan_name': '神豪郝天真【最优成本-0915-01】'}, {'cdp_promotion_id': '7278980439376740388', 'sum_click_cnt': 92, 'sum_convert_cnt': 2, 'sum_show_cnt': 1352, 'sum_stat_cost': '61.97', 'plan_name': '顶级赘婿【最优成本-0915-01】'}, {'cdp_promotion_id': '7279448316731195433', 'sum_click_cnt': 7, 'sum_convert_cnt': 0, 'sum_show_cnt': 260, 'sum_stat_cost': '131.57', 'plan_name': '9.16-天降龙医'}, {'cdp_promotion_id': '7279305685707112459', 'sum_click_cnt': 12, 'sum_convert_cnt': 0, 'sum_show_cnt': 190, 'sum_stat_cost': '21.48', 'plan_name': '神豪郝天真【最优成本-0916-01】'}], 'pageInfo': {'total': 837, 'currentPage': '1', 'totalPage': 84}}}
+INFO     测试:conftest.py:50 ----------测试用例执行结束----------

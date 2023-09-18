@@ -21,8 +21,7 @@ class Message:
         sign = base64.b64encode(hmac_code).decode('utf-8')
         return sign
 
-    def feishu_message(self, summary=None):
-
+    def feishu_message(self, summary=None, use_time=None, data_time=None):
         header = {
             "Content-Type": "application/json;charset=UTF-8"
         }
@@ -45,12 +44,14 @@ class Message:
             "sign": sign,
             "content": {
                 "text": f"<at user_id=\"all\">所有人</at> "
-                f"执行用例的数量：{case_total}\n"
-                f"收集到的用例：{case_collected}\n"
-                f"pass用例数量：{case_passed}\n"
-                f"failed用例数量：{case_failed}\n"
-                f"skipped用例数量：{case_skipped}\n"
-                f"error用例的数量：{case_error}"
+                        f"任务执行时间：{data_time},执行时长：{use_time}秒\n"
+                        f"测试报告已发送，注意查收邮件！\n"
+                        f"执行用例的数量：{case_total}\n"
+                        f"收集到的用例：{case_collected}\n"
+                        f"pass用例数量：{case_passed}\n"
+                        f"failed用例数量：{case_failed}\n"
+                        f"skipped用例数量：{case_skipped}\n"
+                        f"error用例的数量：{case_error}"
             }
         }
 

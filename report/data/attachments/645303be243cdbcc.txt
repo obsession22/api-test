@@ -1,0 +1,16 @@
+INFO     测试:conftest.py:48 ----------测试用例执行开始----------
+INFO     测试:base_api.py:57 用例编号：test-11
+INFO     测试:base_api.py:58 用例标题：根据日期（非法日期—合法日期）
+查询账号数据
+INFO     测试:base_api.py:60 断言表达式：[{"condition":"result.json()['code'] == 500","message":"code不为500"}]
+INFO     测试:base_api.py:62 参数类型：params
+INFO     测试:base_api.py:65 请求参数：{"page":"1",
+"pageSize":"10",
+"stat_time[0]":"2023-09-00",
+"stat_time[1]":"2023-09-30",
+"advertiser_id":"",
+"advertiser_name":""}
+INFO     测试:base_api.py:66 请求类型：GET
+INFO     测试:base_api.py:67 请求地址：http://xctestadmin.xczxwe.com//prod/oc/accountStatistics/index
+INFO     测试:base_api.py:25 接口返回值：{'success': False, 'code': 500, 'message': '{"error":{"root_cause":[{"type":"date_time_exception","reason":"Invalid value for DayOfMonth (valid values 1 - 28/31): 0"}],"type":"search_phase_execution_exception","reason":"all shards failed","phase":"query","grouped":true,"failed_shards":[{"shard":0,"index":"oc_index","node":"uw4HneqEQzaiWpegowYNLQ","reason":{"type":"date_time_exception","reason":"Invalid value for DayOfMonth (valid values 1 - 28/31): 0"}}],"caused_by":{"type":"date_time_exception","reason":"Invalid value for DayOfMonth (valid values 1 - 28/31): 0","caused_by":{"type":"date_time_exception","reason":"Invalid value for DayOfMonth (valid values 1 - 28/31): 0"}}},"status":500}'}
+INFO     测试:conftest.py:50 ----------测试用例执行结束----------

@@ -1,0 +1,1 @@
+allure open ../test_report

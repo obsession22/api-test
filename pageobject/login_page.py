@@ -22,8 +22,9 @@ class Login(Base):
 
         login = Login_test()
         res = login.get_token(url='http://xctestadmin.xczxwe.com/prod/system/login',
-                              json={"username": "冯苗志", "password":"123456"},
+                              json={"username": "冯苗志", "password": "123456"},
                               headers=header).json()
+        print(res)
         token = res['data']['token']
         token_value = f'"{token}"'
         self.driver.get('http://xctestadmin.xczxwe.com')

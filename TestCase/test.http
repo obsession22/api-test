@@ -1,3 +1,108 @@
+# curl 'http://xctestadmin.xczxwe.com/prod/oc/advertiser/index?page=1&pageSize=10&advertiser_id=1765143972750414'
+#  -H 'Accept: application/json, text/plain, */*'
+#  -H 'Accept-Language: zh_CN'
+#  -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkZWZhdWx0XzE1IiwiaWF0IjoxNjk1MDI2MDA1LjQzMzg5NSwibmJmIjoxNjk1MDI2MDA1LjQzMzg5NSwiZXhwIjoxNjk1MDMzMjA1LjQzMzg5NSwiaWQiOjE1LCJ1c2VybmFtZSI6IuWGr-iLl-W_lyIsInVzZXJfdHlwZSI6IjEwMCIsIm5pY2tuYW1lIjoiMTExIiwicGhvbmUiOiI5NTI3IiwiZW1haWwiOiIyMTMiLCJhdmF0YXIiOm51bGwsInNpZ25lZCI6IjEyMyIsImRhc2hib2FyZCI6bnVsbCwiZGVwdF9pZCI6bnVsbCwic3RhdHVzIjoxLCJsb2dpbl9pcCI6IjE0LjE5LjE3LjIxOCIsImxvZ2luX3RpbWUiOiIyMDIzLTA5LTE4IDE2OjI0OjAwIiwiYmFja2VuZF9zZXR0aW5nIjpudWxsLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjoxNSwiY3JlYXRlZF9hdCI6IjIwMjMtMDktMDEgMDk6NTQ6MTkiLCJ1cGRhdGVkX2F0IjoiMjAyMy0wOS0xOCAxNjoyNDowMCIsInJlbWFyayI6bnVsbCwiY29kZSI6IiIsImp3dF9zY2VuZSI6ImRlZmF1bHQifQ.A__CZE-BH08mxdUD0FZJ0o6ZxMJVLnsWS9G3DSxu8Xg'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json;charset=UTF-8'
+#  -H 'Referer: http://xctestadmin.xczxwe.com/'
+#  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  --compressed \
+GET http://xctestadmin.xczxwe.com/prod/oc/advertiser/index?page=1&pageSize=10&advertiser_id=1765143972750414'
+Accept: application/json, text/plain, */*
+Accept-Language: zh_CN
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkZWZhdWx0XzE1IiwiaWF0IjoxNjk1MDI2MDA1LjQzMzg5NSwibmJmIjoxNjk1MDI2MDA1LjQzMzg5NSwiZXhwIjoxNjk1MDMzMjA1LjQzMzg5NSwiaWQiOjE1LCJ1c2VybmFtZSI6IuWGr-iLl-W_lyIsInVzZXJfdHlwZSI6IjEwMCIsIm5pY2tuYW1lIjoiMTExIiwicGhvbmUiOiI5NTI3IiwiZW1haWwiOiIyMTMiLCJhdmF0YXIiOm51bGwsInNpZ25lZCI6IjEyMyIsImRhc2hib2FyZCI6bnVsbCwiZGVwdF9pZCI6bnVsbCwic3RhdHVzIjoxLCJsb2dpbl9pcCI6IjE0LjE5LjE3LjIxOCIsImxvZ2luX3RpbWUiOiIyMDIzLTA5LTE4IDE2OjI0OjAwIiwiYmFja2VuZF9zZXR0aW5nIjpudWxsLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjoxNSwiY3JlYXRlZF9hdCI6IjIwMjMtMDktMDEgMDk6NTQ6MTkiLCJ1cGRhdGVkX2F0IjoiMjAyMy0wOS0xOCAxNjoyNDowMCIsInJlbWFyayI6bnVsbCwiY29kZSI6IiIsImp3dF9zY2VuZSI6ImRlZmF1bHQifQ.A__CZE-BH08mxdUD0FZJ0o6ZxMJVLnsWS9G3DSxu8Xg
+Connection: keep-alive
+Referer: http://xctestadmin.xczxwe.com/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+Content-Type: application/json;charset=UTF-8
+
+###
+
+# curl 'http://xctestadmin.xczxwe.com/prod/system/login'
+#  -H 'Accept: application/json, text/plain, */*'
+#  -H 'Accept-Language: zh_CN'
+#  -H 'Authorization: Bearer null'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json;charset=UTF-8'
+#  -H 'Origin: http://xctestadmin.xczxwe.com'
+#  -H 'Referer: http://xctestadmin.xczxwe.com/'
+#  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  --data-raw '{"username":"∑Î√Á÷æ","password":"123456","code":"n34r"}'
+#  --compressed \
+POST http://xctestadmin.xczxwe.com/prod/system/login
+Accept: application/json, text/plain, */*
+Accept-Language: zh_CN
+Authorization: Bearer null
+Connection: keep-alive
+Origin: http://xctestadmin.xczxwe.com
+Referer: http://xctestadmin.xczxwe.com/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+Content-Type: application/json;charset=UTF-8
+
+{"username":"1°Ø or '1=2","password":"select * from"}
+
+###
+
+# curl 'http://xctestadmin.xczxwe.com/prod/system/common/getLoginLogList?username=%E5%86%AF%E8%8B%97%E5%BF%97&pageSize=5&orderBy=login_time&orderType=desc'
+#  -H 'Accept: application/json, text/plain, */*'
+#  -H 'Accept-Language: zh_CN'
+#  -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkZWZhdWx0XzE1IiwiaWF0IjoxNjk0NzYzMDkxLjY4NTY2NywibmJmIjoxNjk0NzYzMDkxLjY4NTY2NywiZXhwIjoxNjk0NzcwMjkxLjY4NTY2NywiaWQiOjE1LCJ1c2VybmFtZSI6IuWGr-iLl-W_lyIsInVzZXJfdHlwZSI6IjEwMCIsIm5pY2tuYW1lIjoiMTExIiwicGhvbmUiOiI5NTI3IiwiZW1haWwiOiIyMTMiLCJhdmF0YXIiOm51bGwsInNpZ25lZCI6IjEyMyIsImRhc2hib2FyZCI6bnVsbCwiZGVwdF9pZCI6bnVsbCwic3RhdHVzIjoxLCJsb2dpbl9pcCI6IjE0LjE5LjE3LjEzNiIsImxvZ2luX3RpbWUiOiIyMDIzLTA5LTE1IDE1OjI4OjM4IiwiYmFja2VuZF9zZXR0aW5nIjpudWxsLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjoxNSwiY3JlYXRlZF9hdCI6IjIwMjMtMDktMDEgMDk6NTQ6MTkiLCJ1cGRhdGVkX2F0IjoiMjAyMy0wOS0xNSAxNToyODozOCIsInJlbWFyayI6bnVsbCwiY29kZSI6IiIsImp3dF9zY2VuZSI6ImRlZmF1bHQifQ.TEK0pgLE0dmE800ra5TqnM27T1e5hY2EJqnPMomoEa0'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json;charset=UTF-8'
+#  -H 'Referer: http://xctestadmin.xczxwe.com/'
+#  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  --compressed \
+GET http://xctestadmin.xczxwe.com/prod/system/common/getLoginLogList?username=%E5%86%AF%E8%8B%97%E5%BF%97&pageSize=394&orderBy=login_time&orderType=asc
+Accept: application/json, text/plain, */*
+Accept-Language: zh_CN
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkZWZhdWx0XzE1IiwiaWF0IjoxNjk0NzYzMDkxLjY4NTY2NywibmJmIjoxNjk0NzYzMDkxLjY4NTY2NywiZXhwIjoxNjk0NzcwMjkxLjY4NTY2NywiaWQiOjE1LCJ1c2VybmFtZSI6IuWGr-iLl-W_lyIsInVzZXJfdHlwZSI6IjEwMCIsIm5pY2tuYW1lIjoiMTExIiwicGhvbmUiOiI5NTI3IiwiZW1haWwiOiIyMTMiLCJhdmF0YXIiOm51bGwsInNpZ25lZCI6IjEyMyIsImRhc2hib2FyZCI6bnVsbCwiZGVwdF9pZCI6bnVsbCwic3RhdHVzIjoxLCJsb2dpbl9pcCI6IjE0LjE5LjE3LjEzNiIsImxvZ2luX3RpbWUiOiIyMDIzLTA5LTE1IDE1OjI4OjM4IiwiYmFja2VuZF9zZXR0aW5nIjpudWxsLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjoxNSwiY3JlYXRlZF9hdCI6IjIwMjMtMDktMDEgMDk6NTQ6MTkiLCJ1cGRhdGVkX2F0IjoiMjAyMy0wOS0xNSAxNToyODozOCIsInJlbWFyayI6bnVsbCwiY29kZSI6IiIsImp3dF9zY2VuZSI6ImRlZmF1bHQifQ.TEK0pgLE0dmE800ra5TqnM27T1e5hY2EJqnPMomoEa0
+Connection: keep-alive
+Referer: http://xctestadmin.xczxwe.com/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+Content-Type: application/json;charset=UTF-8
+
+###
+
+# curl 'http://xctestadmin.xczxwe.com/prod/oc/advertiser/index?page=1&pageSize=10&tt_id=123&advertiser_name='
+#  -H 'Accept: application/json, text/plain, */*'
+#  -H 'Accept-Language: zh_CN'
+#  -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkZWZhdWx0XzE1IiwiaWF0IjoxNjk0NzU3MTYyLjMzMzgyLCJuYmYiOjE2OTQ3NTcxNjIuMzMzODIsImV4cCI6MTY5NDc2NDM2Mi4zMzM4MiwiaWQiOjE1LCJ1c2VybmFtZSI6IuWGr-iLl-W_lyIsInVzZXJfdHlwZSI6IjEwMCIsIm5pY2tuYW1lIjoiMTExIiwicGhvbmUiOiIxMjMiLCJlbWFpbCI6IjIxMyIsImF2YXRhciI6bnVsbCwic2lnbmVkIjoiMTIzIiwiZGFzaGJvYXJkIjpudWxsLCJkZXB0X2lkIjpudWxsLCJzdGF0dXMiOjEsImxvZ2luX2lwIjoiMTQuMTkuMTcuMTM2IiwibG9naW5fdGltZSI6IjIwMjMtMDktMTQgMTc6NTg6MzQiLCJiYWNrZW5kX3NldHRpbmciOm51bGwsImNyZWF0ZWRfYnkiOjEsInVwZGF0ZWRfYnkiOjE1LCJjcmVhdGVkX2F0IjoiMjAyMy0wOS0wMSAwOTo1NDoxOSIsInVwZGF0ZWRfYXQiOiIyMDIzLTA5LTE0IDE3OjU4OjM0IiwicmVtYXJrIjpudWxsLCJjb2RlIjoiIiwiand0X3NjZW5lIjoiZGVmYXVsdCJ9.DnwI61TGTeBPvc3M7clbZIlnXVsXNscvE57nZYQP1zk'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json;charset=UTF-8'
+#  -H 'Referer: http://xctestadmin.xczxwe.com/'
+#  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  --compressed \
+GET http://xctestadmin.xczxwe.com/prod/oc/advertiser/index?page=1&pageSize=10&tt_id=123&advertiser_name=
+Accept: application/json, text/plain, */*
+Accept-Language: zh_CN
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkZWZhdWx0XzE1IiwiaWF0IjoxNjk0NzU3MTYyLjMzMzgyLCJuYmYiOjE2OTQ3NTcxNjIuMzMzODIsImV4cCI6MTY5NDc2NDM2Mi4zMzM4MiwiaWQiOjE1LCJ1c2VybmFtZSI6IuWGr-iLl-W_lyIsInVzZXJfdHlwZSI6IjEwMCIsIm5pY2tuYW1lIjoiMTExIiwicGhvbmUiOiIxMjMiLCJlbWFpbCI6IjIxMyIsImF2YXRhciI6bnVsbCwic2lnbmVkIjoiMTIzIiwiZGFzaGJvYXJkIjpudWxsLCJkZXB0X2lkIjpudWxsLCJzdGF0dXMiOjEsImxvZ2luX2lwIjoiMTQuMTkuMTcuMTM2IiwibG9naW5fdGltZSI6IjIwMjMtMDktMTQgMTc6NTg6MzQiLCJiYWNrZW5kX3NldHRpbmciOm51bGwsImNyZWF0ZWRfYnkiOjEsInVwZGF0ZWRfYnkiOjE1LCJjcmVhdGVkX2F0IjoiMjAyMy0wOS0wMSAwOTo1NDoxOSIsInVwZGF0ZWRfYXQiOiIyMDIzLTA5LTE0IDE3OjU4OjM0IiwicmVtYXJrIjpudWxsLCJjb2RlIjoiIiwiand0X3NjZW5lIjoiZGVmYXVsdCJ9.DnwI61TGTeBPvc3M7clbZIlnXVsXNscvE57nZYQP1zk
+Connection: keep-alive
+Referer: http://xctestadmin.xczxwe.com/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+Content-Type: application/json;charset=UTF-8
+
+###
+
+# curl 'http://xctestadmin.xczxwe.com/prod/oc/advertiser/index?page=1&pageSize=10&advertiser_name=123'
+#  -H 'Accept: application/json, text/plain, */*'
+#  -H 'Accept-Language: zh_CN'
+#  -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkZWZhdWx0XzE1IiwiaWF0IjoxNjk0NzU3MTYyLjMzMzgyLCJuYmYiOjE2OTQ3NTcxNjIuMzMzODIsImV4cCI6MTY5NDc2NDM2Mi4zMzM4MiwiaWQiOjE1LCJ1c2VybmFtZSI6IuWGr-iLl-W_lyIsInVzZXJfdHlwZSI6IjEwMCIsIm5pY2tuYW1lIjoiMTExIiwicGhvbmUiOiIxMjMiLCJlbWFpbCI6IjIxMyIsImF2YXRhciI6bnVsbCwic2lnbmVkIjoiMTIzIiwiZGFzaGJvYXJkIjpudWxsLCJkZXB0X2lkIjpudWxsLCJzdGF0dXMiOjEsImxvZ2luX2lwIjoiMTQuMTkuMTcuMTM2IiwibG9naW5fdGltZSI6IjIwMjMtMDktMTQgMTc6NTg6MzQiLCJiYWNrZW5kX3NldHRpbmciOm51bGwsImNyZWF0ZWRfYnkiOjEsInVwZGF0ZWRfYnkiOjE1LCJjcmVhdGVkX2F0IjoiMjAyMy0wOS0wMSAwOTo1NDoxOSIsInVwZGF0ZWRfYXQiOiIyMDIzLTA5LTE0IDE3OjU4OjM0IiwicmVtYXJrIjpudWxsLCJjb2RlIjoiIiwiand0X3NjZW5lIjoiZGVmYXVsdCJ9.DnwI61TGTeBPvc3M7clbZIlnXVsXNscvE57nZYQP1zk'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json;charset=UTF-8'
+#  -H 'Referer: http://xctestadmin.xczxwe.com/'
+#  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  --compressed \
+GET http://xctestadmin.xczxwe.com/prod/oc/advertiser/index?page=1&pageSize=10&advertiser_name=123
+Accept: application/json, text/plain, */*
+Accept-Language: zh_CN
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkZWZhdWx0XzE1IiwiaWF0IjoxNjk0NzU3MTYyLjMzMzgyLCJuYmYiOjE2OTQ3NTcxNjIuMzMzODIsImV4cCI6MTY5NDc2NDM2Mi4zMzM4MiwiaWQiOjE1LCJ1c2VybmFtZSI6IuWGr-iLl-W_lyIsInVzZXJfdHlwZSI6IjEwMCIsIm5pY2tuYW1lIjoiMTExIiwicGhvbmUiOiIxMjMiLCJlbWFpbCI6IjIxMyIsImF2YXRhciI6bnVsbCwic2lnbmVkIjoiMTIzIiwiZGFzaGJvYXJkIjpudWxsLCJkZXB0X2lkIjpudWxsLCJzdGF0dXMiOjEsImxvZ2luX2lwIjoiMTQuMTkuMTcuMTM2IiwibG9naW5fdGltZSI6IjIwMjMtMDktMTQgMTc6NTg6MzQiLCJiYWNrZW5kX3NldHRpbmciOm51bGwsImNyZWF0ZWRfYnkiOjEsInVwZGF0ZWRfYnkiOjE1LCJjcmVhdGVkX2F0IjoiMjAyMy0wOS0wMSAwOTo1NDoxOSIsInVwZGF0ZWRfYXQiOiIyMDIzLTA5LTE0IDE3OjU4OjM0IiwicmVtYXJrIjpudWxsLCJjb2RlIjoiIiwiand0X3NjZW5lIjoiZGVmYXVsdCJ9.DnwI61TGTeBPvc3M7clbZIlnXVsXNscvE57nZYQP1zk
+Connection: keep-alive
+Referer: http://xctestadmin.xczxwe.com/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+Content-Type: application/json;charset=UTF-8
+
+###
+
 # curl 'http://xctestadmin.xczxwe.com/prod/system/login'
 #  -H 'Accept: application/json, text/plain, */*'
 #  -H 'Accept-Language: zh_CN'
@@ -10,14 +115,8 @@
 #  --data-raw '{"username":"∑Î√Á÷æ","password":"123456","code":"wa4b"}'
 #  --compressed \
 POST http://xctestadmin.xczxwe.com/prod/system/login
-Accept: application/json, text/plain, */*
-Accept-Language: zh_CN
-Authorization: Bearer null
-Origin: http://xctestadmin.xczxwe.com
-Proxy-Connection: keep-alive
 Referer: http://xctestadmin.xczxwe.com/
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
-Content-Type: application/json;charset=UTF-8
+
 
 {"username":"∑Î√Á÷æ","password":"123456","code":"wa4b"}
 
@@ -34,13 +133,9 @@ Referer: http://xctestadmin.xczxwe.com/
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
 Content-Type: application/json;charset=UTF-8
 
-{"username":"∑Î√Á÷æ","password":"123456"}
-
+{"username":"∑Î√Á÷æ","password":""}
 
 ###
-
-
-
 
 ###
 
