@@ -14,17 +14,11 @@ from Api.base_api import BaseApi
 class Testapi:
 
     @allure.story("用户登录api")
-    @pytest.mark.parametrize('data', excle_read('./data/api_test.xlsx', 'Sheet1'))
+    @pytest.mark.parametrize('data', excle_read(excle_url='./data/api_test.xlsx', sheet_name='Sheet1'))
     def test_api(self, data, api_log):
-
-        case_num, case_title, headers, method, url, parameter_type, request_data, assertion_conditions = data
+        sheet_name = 'Sheet1'
         api = BaseApi(api_log)
-        result = api.api(case_num=case_num,
-                         case_title=case_title,
-                         url=url, method=method,
-                         headers=headers, assertion_condition=assertion_conditions,
-                         parameter_type=parameter_type,
-                         request_data=request_data).json()
+        result = api.api(data, sheet_name).json()
         code = result['code']
         if code == 200:
             token = result["data"]["token"]
@@ -40,87 +34,55 @@ class Testapi:
     @allure.story("获取用户权限api")
     @pytest.mark.parametrize('data', excle_read('./data/api_test.xlsx', 'Sheet2'))
     def test_api1(self, data, api_log):
-        case_num, case_title, headers, method, url, parameter_type, request_data = data
+        sheet_name = 'Sheet2'
         api = BaseApi(api_log)
-        result = api.api(case_num=case_num, case_title=case_title, url=url, method=method, headers=headers, parameter_type=parameter_type, request_data=request_data)
+        result = api.api(data, sheet_name).json()
 
     @allure.story("查询广告数据api")
     @pytest.mark.parametrize('data', excle_read('./data/api_test.xlsx', '广告数据用例'))
     def test_api2(self, data, api_log):
-        case_num, case_title, headers, method, url, parameter_type, request_data, assertion_conditions = data
+        sheet_name = '广告数据用例'
         api = BaseApi(api_log)
-        result = api.api(case_num=case_num,
-                         case_title=case_title,
-                         url=url, method=method,
-                         headers=headers, assertion_condition=assertion_conditions,
-                         parameter_type=parameter_type,
-                         request_data=request_data).json()
+        result = api.api(data, sheet_name).json()
 
-    # @allure.story("修改个人信息api")
-    # @pytest.mark.parametrize('data', excle_read('./data/api_test.xlsx', '修改个人信息'))
-    # def test_update_info(self, data, api_log):
-    #
-    #     case_num, case_title, headers, method, url, parameter_type, request_data = data
-    #     api = BaseApi(api_log)
-    #     result = api.api(case_num=case_num, case_title=case_title, url=url, method=method, headers=headers,
-    #                      parameter_type=parameter_type, request_data=request_data).json()
+    @allure.story("修改个人信息api")
+    @pytest.mark.parametrize('data', excle_read('./data/api_test.xlsx', '修改个人信息'))
+    def test_update_info(self, data, api_log):
+        sheet_name = '修改个人信息'
+        api = BaseApi(api_log)
+        result = api.api(data, sheet_name).json()
 
     @allure.story("查询素材管理信息api")
     @pytest.mark.parametrize('data', excle_read('./data/api_test.xlsx', '查询素材管理信息'))
     def test_query_materials_manager(self, data, api_log):
-        case_num, case_title, headers, method, url, parameter_type, request_data, assertion_conditions = data
+        sheet_name = '查询素材管理信息'
         api = BaseApi(api_log)
-        result = api.api(case_num=case_num,
-                         case_title=case_title,
-                         url=url, method=method,
-                         headers=headers, assertion_condition=assertion_conditions,
-                         parameter_type=parameter_type,
-                         request_data=request_data).json()
+        result = api.api(data, sheet_name).json()
 
     @allure.story("查询授权账号信息api")
     @pytest.mark.parametrize('data', excle_read('./data/api_test.xlsx', '查询授权账号'))
     def test_query_account_authorization(self, data, api_log):
-        case_num, case_title, headers, method, url, parameter_type, request_data, assertion_conditions = data
+        sheet_name = '查询授权账号'
         api = BaseApi(api_log)
-        result = api.api(case_num=case_num,
-                         case_title=case_title,
-                         url=url, method=method,
-                         headers=headers, assertion_condition=assertion_conditions,
-                         parameter_type=parameter_type,
-                         request_data=request_data).json()
+        result = api.api(data, sheet_name).json()
 
     @allure.story("查询计划数据api")
     @pytest.mark.parametrize('data', excle_read('./data/api_test.xlsx', '查询计划数据'))
     def test_query_plan(self, data, api_log):
-        case_num, case_title, headers, method, url, parameter_type, request_data, assertion_conditions = data
+        sheet_name = '查询计划数据'
         api = BaseApi(api_log)
-        result = api.api(case_num=case_num,
-                         case_title=case_title,
-                         url=url, method=method,
-                         headers=headers, assertion_condition=assertion_conditions,
-                         parameter_type=parameter_type,
-                         request_data=request_data).json()
+        result = api.api(data, sheet_name).json()
 
     @allure.story("查询账号数据api")
     @pytest.mark.parametrize('data', excle_read('./data/api_test.xlsx', '查询账号数据'))
     def test_query_account(self, data, api_log):
-        case_num, case_title, headers, method, url, parameter_type, request_data, assertion_conditions = data
+        sheet_name = '查询账号数据'
         api = BaseApi(api_log)
-        result = api.api(case_num=case_num,
-                         case_title=case_title,
-                         url=url, method=method,
-                         headers=headers, assertion_condition=assertion_conditions,
-                         parameter_type=parameter_type,
-                         request_data=request_data).json()
+        result = api.api(data, sheet_name).json()
 
     @allure.story("查询素材数据api")
     @pytest.mark.parametrize('data', excle_read('./data/api_test.xlsx', '查询素材数据'))
     def test_query_materials(self, data, api_log):
-        case_num, case_title, headers, method, url, parameter_type, request_data, assertion_conditions = data
+        sheet_name = '查询素材数据'
         api = BaseApi(api_log)
-        result = api.api(case_num=case_num,
-                         case_title=case_title,
-                         url=url, method=method,
-                         headers=headers, assertion_condition=assertion_conditions,
-                         parameter_type=parameter_type,
-                         request_data=request_data).json()
+        result = api.api(data, sheet_name).json()

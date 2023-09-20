@@ -20,7 +20,12 @@ def get_project_path():
 
 # 读取yaml配置文件
 def get_yaml_config(one_name,two_name):
-    '''全局：读取全局配置yaml文件'''
+    '''
+    全局：读取全局配置yaml文件
+    :param one_name:
+    :param two_name:
+    :return:
+    '''
     with open(str(get_project_path())+'\\' + 'config.yaml','r',encoding='utf-8',errors='ignore') as f:
         # cfg = yaml.load(f.read(), Loader=yaml.FullLoader)
         cfg=yaml.safe_load(f.read())

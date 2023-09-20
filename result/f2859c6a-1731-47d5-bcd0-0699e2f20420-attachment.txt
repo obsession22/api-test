@@ -1,0 +1,14 @@
+INFO     测试:conftest.py:51 ----------测试用例执行开始----------
+INFO     测试:base_api.py:75 用例编号：test08
+INFO     测试:base_api.py:76 用例标题：根据巨量广告名称（模糊搜索，匹配后缀）
+查询广告账号数据
+INFO     测试:base_api.py:78 断言表达式：[{"condition":"result.json()['code'] == 200","message":"code不为200"},
+{"condition":"len(result.json()['data'])>0","message":"data不为空"}]
+INFO     测试:base_api.py:80 参数类型：params
+INFO     测试:base_api.py:83 请求参数：{"page":"1","pageSize":"10",
+"advertiser_id":"","tt_id":"",
+"advertiser_name":"123"}
+INFO     测试:base_api.py:84 请求类型：GET
+INFO     测试:base_api.py:85 请求地址：http://xctestadmin.xczxwe.com/prod/oc/advertiser/index
+INFO     测试:base_api.py:26 接口返回值：{'success': True, 'message': '请求成功', 'code': 200, 'data': {'items': [{'id': 2972, 'advertiser_id': 1750437698837582, 'advertiser_name': '涵畅小剧场-ZN-123', 'tt_id': 1286852357653150, 'active_status': 2}, {'id': 5776, 'advertiser_id': 1758500176213005, 'advertiser_name': '（0222）花生-杏运-123', 'tt_id': 1286852357653150, 'active_status': 2}, {'id': 5990, 'advertiser_id': 1758333443963981, 'advertiser_name': '（0220）壹柚子-映客-123', 'tt_id': 1286852357653150, 'active_status': 2}, {'id': 7109, 'advertiser_id': 1754800584863757, 'advertiser_name': '网易-SS-金芒-都市枭龙-陈思豪-123', 'tt_id': 1286852357653150, 'active_status': 2}, {'id': 9060, 'advertiser_id': 1747802048412679, 'advertiser_name': '小牛-嘉书-星橙主体-ZN-123', 'tt_id': 1286852357653150, 'active_status': 2}, {'id': 12060, 'advertiser_id': 1754805783194632, 'advertiser_name': '小牛-点众-星橙主体-123', 'tt_id': 4086252182191112, 'active_status': 2}, {'id': 12822, 'advertiser_id': 1749273342926861, 'advertiser_name': '点众-SS-星橙-离婚后继承亿万家产【广州星橙】-123', 'tt_id': 4086252182191112, 'active_status': 2}, {'id': 13222, 'advertiser_id': 1743839591686157, 'advertiser_name': 'xc28-双面美女总裁-微信小程序-情云剧场-小陈-123', 'tt_id': 4086252182191112, 'active_status': 2}, {'id': 15913, 'advertiser_id': 1775171767538776, 'advertiser_name': '（0825）点众-万柿称心-123', 'tt_id': 4086252182191112, 'active_status': 2}, {'id': 18614, 'advertiser_id': 1750178406161480, 'advertiser_name': '天空短剧场-ZN-123', 'tt_id': 4086252182191112, 'active_status': 2}], 'pageInfo': {'total': 14, 'currentPage': 1, 'totalPage': 2}}}
+INFO     测试:conftest.py:56 ----------测试用例执行结束----------

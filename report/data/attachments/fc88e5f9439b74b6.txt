@@ -1,0 +1,15 @@
+INFO     测试:conftest.py:51 ----------测试用例执行开始----------
+INFO     测试:base_api.py:75 用例编号：test_03
+INFO     测试:base_api.py:76 用例标题：根据广告id查询授权账号信息
+INFO     测试:base_api.py:78 断言表达式：[{"condition":"result.json()['code'] == 200","message":"code不为200"},
+{"condition":"len(result.json()['data'])>0","message":"data不为空"}]
+INFO     测试:base_api.py:80 参数类型：params
+INFO     测试:base_api.py:83 请求参数：{"page":"1",
+"pageSize":"10",
+"account":"",
+"advertiser_id":"1738026753219591",
+"advertiser_name":""}
+INFO     测试:base_api.py:84 请求类型：GET
+INFO     测试:base_api.py:85 请求地址：http://xctestadmin.xczxwe.com//prod/oc/authUser/index
+INFO     测试:base_api.py:26 接口返回值：{'success': True, 'message': '请求成功', 'code': 200, 'data': {'items': [{'id': 10, 'status': 1, 'account': 4086252182191112, 'token': '98c0a23555fd1d51adf38946d0c8b4fa5525d521', 'created_at': None, 'updated_at': '2023-09-20 17:40:24', 'admin_id': 0, 'advertiser_id': 1738026753219591, 'refresh_token': '36400fd74def57a9ae9875e6facc234c08c31491', 'advertiser_name': '星橙在线'}], 'pageInfo': {'total': 1, 'currentPage': 1, 'totalPage': 1}}}
+INFO     测试:conftest.py:56 ----------测试用例执行结束----------

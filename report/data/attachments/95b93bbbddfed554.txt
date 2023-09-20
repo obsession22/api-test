@@ -1,0 +1,15 @@
+INFO     测试:conftest.py:51 ----------测试用例执行开始----------
+INFO     测试:base_api.py:75 用例编号：test-6
+INFO     测试:base_api.py:76 用例标题：根据广告id（不存在）
+查询账号数据（数据为空）
+INFO     测试:base_api.py:78 断言表达式：[{"condition":"result.json()['code'] == 200","message":"code不为200"},
+{"condition":"len(result.json()['data']['items'])==0 ","message":"查询目标的返回值需为空"}]
+INFO     测试:base_api.py:80 参数类型：params
+INFO     测试:base_api.py:83 请求参数：{"page":"1",
+"pageSize":"10",
+"advertiser_id":"1111",
+"advertiser_name":""}
+INFO     测试:base_api.py:84 请求类型：GET
+INFO     测试:base_api.py:85 请求地址：http://xctestadmin.xczxwe.com//prod/oc/accountStatistics/index
+INFO     测试:base_api.py:26 接口返回值：{'success': True, 'message': '请求成功', 'code': 200, 'data': {'items': [], 'pageInfo': {'total': 0, 'currentPage': '1', 'totalPage': 0}}}
+INFO     测试:conftest.py:56 ----------测试用例执行结束----------

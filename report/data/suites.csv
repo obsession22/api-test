@@ -1,94 +1,95 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Sep 18 17:30:09 CST 2023","Mon Sep 18 17:30:09 CST 2023","223","TestCase.Api_test","test_api","Testapi","","","根据广告名称（es中包含包含该词组）
-查询授权账号信息",""
-"passed","Mon Sep 18 17:29:39 CST 2023","Mon Sep 18 17:29:40 CST 2023","65","TestCase.Api_test","test_api","Testapi","","","用户登录
--密码长度<6字符",""
-"passed","Mon Sep 18 17:30:14 CST 2023","Mon Sep 18 17:30:14 CST 2023","176","TestCase.Api_test","test_api","Testapi","","","根据日期（无效日期—有效日期）
-查询账号数据",""
-"passed","Mon Sep 18 17:29:40 CST 2023","Mon Sep 18 17:29:41 CST 2023","1221","TestCase.Api_test","test_api","Testapi","","","根据巨量广告ID
-查询广告账号数据",""
-"passed","Mon Sep 18 17:30:05 CST 2023","Mon Sep 18 17:30:06 CST 2023","1210","TestCase.Api_test","test_api","Testapi","","","根据广告id
-查询素材数据",""
-"passed","Mon Sep 18 17:30:09 CST 2023","Mon Sep 18 17:30:09 CST 2023","131","TestCase.Api_test","test_api","Testapi","","","根据广告名称（不存在）
-查询授权账号信息（数据为空）",""
-"passed","Mon Sep 18 17:30:04 CST 2023","Mon Sep 18 17:30:05 CST 2023","1224","TestCase.Api_test","test_api","Testapi","","","根据素材id
-查询素材数据",""
-"passed","Mon Sep 18 17:30:06 CST 2023","Mon Sep 18 17:30:06 CST 2023","143","TestCase.Api_test","test_api","Testapi","","","根据素材id（不存在）
-查询素材数据（数据为空）",""
-"passed","Mon Sep 18 17:30:08 CST 2023","Mon Sep 18 17:30:08 CST 2023","132","TestCase.Api_test","test_api","Testapi","","","根据广告id（不存在）
-查询授权账号信息（数据为空）",""
-"passed","Mon Sep 18 17:30:11 CST 2023","Mon Sep 18 17:30:11 CST 2023","85","TestCase.Api_test","test_api","Testapi","","","根据计划日期（合法日期-非法日期）
-查询计划数据",""
-"passed","Mon Sep 18 17:30:14 CST 2023","Mon Sep 18 17:30:15 CST 2023","841","TestCase.Api_test","test_api","Testapi","","","查询素材数据列表",""
-"passed","Mon Sep 18 17:29:42 CST 2023","Mon Sep 18 17:29:42 CST 2023","147","TestCase.Api_test","test_api","Testapi","","","根据巨量广告名称（不存在）
+"passed","Wed Sep 20 17:40:14 CST 2023","Wed Sep 20 17:40:14 CST 2023","369","TestCase.Api_test","test_api","Testapi","","","根据巨量广告ID（不存在）
 查询广告账号数据（数据为空）",""
-"passed","Mon Sep 18 17:30:11 CST 2023","Mon Sep 18 17:30:11 CST 2023","73","TestCase.Api_test","test_api","Testapi","","","根据计划日期（非法日期-合法日期）
-查询计划数据",""
-"passed","Mon Sep 18 17:30:09 CST 2023","Mon Sep 18 17:30:09 CST 2023","519","TestCase.Api_test","test_api","Testapi","","","查询计划数据列表",""
-"passed","Mon Sep 18 17:30:07 CST 2023","Mon Sep 18 17:30:07 CST 2023","221","TestCase.Api_test","test_api","Testapi","","","查询授权账号信息列表",""
-"passed","Mon Sep 18 17:29:41 CST 2023","Mon Sep 18 17:29:42 CST 2023","220","TestCase.Api_test","test_api","Testapi","","","根据巨量广告名称
+"passed","Wed Sep 20 17:40:13 CST 2023","Wed Sep 20 17:40:13 CST 2023","419","TestCase.Api_test","test_api","Testapi","","","根据广告主ID
 查询广告账号数据",""
-"passed","Mon Sep 18 17:29:39 CST 2023","Mon Sep 18 17:29:39 CST 2023","58","TestCase.Api_test","test_api","Testapi","","","用户登录
--账号密码为空",""
-"passed","Mon Sep 18 17:30:09 CST 2023","Mon Sep 18 17:30:10 CST 2023","153","TestCase.Api_test","test_api","Testapi","","","根据计划日期查询计划数据",""
-"passed","Mon Sep 18 17:29:42 CST 2023","Mon Sep 18 17:29:42 CST 2023","138","TestCase.Api_test","test_api","Testapi","","","根据巨量广告ID（不存在）
-查询广告账号数据（数据为空）",""
-"passed","Mon Sep 18 17:29:39 CST 2023","Mon Sep 18 17:29:39 CST 2023","506","TestCase.Api_test","test_api","Testapi","","","用户登录
--密码错误",""
-"passed","Mon Sep 18 17:30:11 CST 2023","Mon Sep 18 17:30:12 CST 2023","190","TestCase.Api_test","test_api","Testapi","","","根据日期查询账号数据",""
-"passed","Mon Sep 18 17:29:41 CST 2023","Mon Sep 18 17:29:41 CST 2023","219","TestCase.Api_test","test_api","Testapi","","","根据广告主ID
+"passed","Wed Sep 20 17:40:29 CST 2023","Wed Sep 20 17:40:30 CST 2023","446","TestCase.Api_test","test_api","Testapi","","","根据计划日期（无效日期-有效日期）
+查询计划数据",""
+"passed","Wed Sep 20 17:40:12 CST 2023","Wed Sep 20 17:40:13 CST 2023","410","TestCase.Api_test","test_api","Testapi","","","根据巨量广告ID
 查询广告账号数据",""
-"passed","Mon Sep 18 17:30:08 CST 2023","Mon Sep 18 17:30:08 CST 2023","218","TestCase.Api_test","test_api","Testapi","","","根据广告名称查询授权账号信息",""
-"passed","Mon Sep 18 17:30:08 CST 2023","Mon Sep 18 17:30:08 CST 2023","211","TestCase.Api_test","test_api","Testapi","","","根据广告id查询授权账号信息",""
-"passed","Mon Sep 18 17:30:10 CST 2023","Mon Sep 18 17:30:10 CST 2023","135","TestCase.Api_test","test_api","Testapi","","","根据计划id(不存在)
-查询计划数据",""
-"passed","Mon Sep 18 17:30:10 CST 2023","Mon Sep 18 17:30:10 CST 2023","166","TestCase.Api_test","test_api","Testapi","","","根据计划名称查询计划数据（es中包含该词组)",""
-"passed","Mon Sep 18 17:29:39 CST 2023","Mon Sep 18 17:29:39 CST 2023","56","TestCase.Api_test","test_api","Testapi","","","用户登录
--账号为空",""
-"passed","Mon Sep 18 17:30:15 CST 2023","Mon Sep 18 17:30:15 CST 2023","147","TestCase.Api_test","test_api","Testapi","","","根据素材id查询素材数据",""
-"passed","Mon Sep 18 17:29:39 CST 2023","Mon Sep 18 17:29:39 CST 2023","60","TestCase.Api_test","test_api","Testapi","","","用户登录
--密码为空",""
-"passed","Mon Sep 18 17:29:40 CST 2023","Mon Sep 18 17:29:40 CST 2023","81","TestCase.Api_test","test_api","Testapi","","","获取用户权限信息",""
-"passed","Mon Sep 18 17:30:03 CST 2023","Mon Sep 18 17:30:04 CST 2023","223","TestCase.Api_test","test_api","Testapi","","","查询素材管理数据列表",""
-"passed","Mon Sep 18 17:30:06 CST 2023","Mon Sep 18 17:30:07 CST 2023","138","TestCase.Api_test","test_api","Testapi","","","根据广告id（不存在）
-查询素材数据（数据为空）",""
-"passed","Mon Sep 18 17:30:10 CST 2023","Mon Sep 18 17:30:10 CST 2023","146","TestCase.Api_test","test_api","Testapi","","","根据计划日期（不在有效日期内）
-查询计划数据",""
-"passed","Mon Sep 18 17:30:14 CST 2023","Mon Sep 18 17:30:14 CST 2023","66","TestCase.Api_test","test_api","Testapi","","","根据日期（非法日期—合法日期）
-查询账号数据",""
-"passed","Mon Sep 18 17:29:42 CST 2023","Mon Sep 18 17:29:42 CST 2023","144","TestCase.Api_test","test_api","Testapi","","","根据广告主ID（不存在）
-查询广告账号数据（数据为空）",""
-"passed","Mon Sep 18 17:30:10 CST 2023","Mon Sep 18 17:30:11 CST 2023","253","TestCase.Api_test","test_api","Testapi","","","根据计划日期（无效日期-有效日期）
-查询计划数据",""
-"passed","Mon Sep 18 17:30:07 CST 2023","Mon Sep 18 17:30:08 CST 2023","213","TestCase.Api_test","test_api","Testapi","","","根据账号id查询授权账号信息",""
-"passed","Mon Sep 18 17:29:37 CST 2023","Mon Sep 18 17:29:39 CST 2023","1804","TestCase.Api_test","test_api","Testapi","","","用户登录",""
-"passed","Mon Sep 18 17:30:07 CST 2023","Mon Sep 18 17:30:07 CST 2023","158","TestCase.Api_test","test_api","Testapi","","","根据素材标题（不存在）
-查询素材数据（数据为空）",""
-"passed","Mon Sep 18 17:30:10 CST 2023","Mon Sep 18 17:30:10 CST 2023","141","TestCase.Api_test","test_api","Testapi","","","根据计划名称（es中不包含该词组）
-查询计划数据",""
-"passed","Mon Sep 18 17:30:14 CST 2023","Mon Sep 18 17:30:14 CST 2023","150","TestCase.Api_test","test_api","Testapi","","","根据日期（有效日期—无效日期）
-查询账号数据",""
-"passed","Mon Sep 18 17:30:08 CST 2023","Mon Sep 18 17:30:08 CST 2023","134","TestCase.Api_test","test_api","Testapi","","","根据账号id（不存在）
-查询授权账号信息（数据为空）",""
-"passed","Mon Sep 18 17:29:40 CST 2023","Mon Sep 18 17:29:40 CST 2023","214","TestCase.Api_test","test_api","Testapi","","","查询广告账号数据列表",""
-"passed","Mon Sep 18 17:30:07 CST 2023","Mon Sep 18 17:30:07 CST 2023","235","TestCase.Api_test","test_api","Testapi","","","根据素材标题（模糊匹配）
+"passed","Wed Sep 20 17:40:22 CST 2023","Wed Sep 20 17:40:23 CST 2023","434","TestCase.Api_test","test_api","Testapi","","","根据素材标题（模糊匹配）
 查询素材数据（匹配后缀）",""
-"passed","Mon Sep 18 17:30:13 CST 2023","Mon Sep 18 17:30:13 CST 2023","144","TestCase.Api_test","test_api","Testapi","","","根据广告id（不存在）
-查询账号数据（数据为空）",""
-"passed","Mon Sep 18 17:30:12 CST 2023","Mon Sep 18 17:30:12 CST 2023","163","TestCase.Api_test","test_api","Testapi","","","根据广告id查询账号数据",""
-"passed","Mon Sep 18 17:30:07 CST 2023","Mon Sep 18 17:30:07 CST 2023","249","TestCase.Api_test","test_api","Testapi","","","根据素材标题
-查询素材数据",""
-"passed","Mon Sep 18 17:30:12 CST 2023","Mon Sep 18 17:30:13 CST 2023","1165","TestCase.Api_test","test_api","Testapi","","","根据日期查（不在有效日期内）
-询账号数据",""
-"passed","Mon Sep 18 17:30:11 CST 2023","Mon Sep 18 17:30:11 CST 2023","156","TestCase.Api_test","test_api","Testapi","","","根据计划日期（有效日期-无效日期）
-查询计划数据",""
-"passed","Mon Sep 18 17:30:13 CST 2023","Mon Sep 18 17:30:13 CST 2023","146","TestCase.Api_test","test_api","Testapi","","","根据广告名称（es中不存在该词组）
-查询账号数据（数据为空）",""
-"passed","Mon Sep 18 17:30:11 CST 2023","Mon Sep 18 17:30:11 CST 2023","179","TestCase.Api_test","test_api","Testapi","","","查询账号数据列表",""
-"passed","Mon Sep 18 17:30:12 CST 2023","Mon Sep 18 17:30:12 CST 2023","190","TestCase.Api_test","test_api","Testapi","","","根据广告名称查询账号数据
-（es中包含该词组）",""
-"passed","Mon Sep 18 17:30:10 CST 2023","Mon Sep 18 17:30:10 CST 2023","142","TestCase.Api_test","test_api","Testapi","","","根据计划id查询计划数据",""
-"broken","Mon Sep 18 17:29:42 CST 2023","Mon Sep 18 17:30:03 CST 2023","21051","TestCase.Api_test","test_api","Testapi","","","根据巨量广告名称（模糊搜索，匹配后缀）
+"passed","Wed Sep 20 17:40:15 CST 2023","Wed Sep 20 17:40:15 CST 2023","421","TestCase.Api_test","test_api","Testapi","","","根据巨量广告名称（模糊搜索，匹配后缀）
 查询广告账号数据",""
-"passed","Mon Sep 18 17:30:14 CST 2023","Mon Sep 18 17:30:14 CST 2023","66","TestCase.Api_test","test_api","Testapi","","","根据日期（合法日期—非法日期）
+"passed","Wed Sep 20 17:40:32 CST 2023","Wed Sep 20 17:40:32 CST 2023","395","TestCase.Api_test","test_api","Testapi","","","根据广告名称查询账号数据
+（es中包含该词组）",""
+"passed","Wed Sep 20 17:40:31 CST 2023","Wed Sep 20 17:40:31 CST 2023","381","TestCase.Api_test","test_api","Testapi","","","根据日期查询账号数据",""
+"passed","Wed Sep 20 17:40:14 CST 2023","Wed Sep 20 17:40:15 CST 2023","343","TestCase.Api_test","test_api","Testapi","","","根据巨量广告名称（不存在）
+查询广告账号数据（数据为空）",""
+"passed","Wed Sep 20 17:40:13 CST 2023","Wed Sep 20 17:40:14 CST 2023","471","TestCase.Api_test","test_api","Testapi","","","根据巨量广告名称
+查询广告账号数据",""
+"passed","Wed Sep 20 17:40:29 CST 2023","Wed Sep 20 17:40:29 CST 2023","345","TestCase.Api_test","test_api","Testapi","","","根据计划名称（es中不包含该词组）
+查询计划数据",""
+"passed","Wed Sep 20 17:40:30 CST 2023","Wed Sep 20 17:40:30 CST 2023","180","TestCase.Api_test","test_api","Testapi","","","根据计划日期（非法日期-合法日期）
+查询计划数据",""
+"passed","Wed Sep 20 17:40:33 CST 2023","Wed Sep 20 17:40:33 CST 2023","349","TestCase.Api_test","test_api","Testapi","","","根据广告名称（es中不存在该词组）
+查询账号数据（数据为空）",""
+"passed","Wed Sep 20 17:40:27 CST 2023","Wed Sep 20 17:40:28 CST 2023","375","TestCase.Api_test","test_api","Testapi","","","根据计划id查询计划数据",""
+"passed","Wed Sep 20 17:40:14 CST 2023","Wed Sep 20 17:40:14 CST 2023","343","TestCase.Api_test","test_api","Testapi","","","根据广告主ID（不存在）
+查询广告账号数据（数据为空）",""
+"passed","Wed Sep 20 17:40:34 CST 2023","Wed Sep 20 17:40:34 CST 2023","398","TestCase.Api_test","test_api","Testapi","","","根据日期（有效日期—无效日期）
 查询账号数据",""
+"passed","Wed Sep 20 17:40:12 CST 2023","Wed Sep 20 17:40:12 CST 2023","422","TestCase.Api_test","test_api","Testapi","","","查询广告账号数据列表",""
+"passed","Wed Sep 20 17:40:34 CST 2023","Wed Sep 20 17:40:35 CST 2023","196","TestCase.Api_test","test_api","Testapi","","","根据日期（非法日期—合法日期）
+查询账号数据",""
+"passed","Wed Sep 20 17:40:31 CST 2023","Wed Sep 20 17:40:32 CST 2023","422","TestCase.Api_test","test_api","Testapi","","","根据广告id查询账号数据",""
+"passed","Wed Sep 20 17:40:28 CST 2023","Wed Sep 20 17:40:28 CST 2023","365","TestCase.Api_test","test_api","Testapi","","","根据计划名称查询计划数据（es中包含该词组)",""
+"passed","Wed Sep 20 17:40:34 CST 2023","Wed Sep 20 17:40:34 CST 2023","173","TestCase.Api_test","test_api","Testapi","","","根据日期（合法日期—非法日期）
+查询账号数据",""
+"passed","Wed Sep 20 17:40:36 CST 2023","Wed Sep 20 17:40:36 CST 2023","357","TestCase.Api_test","test_api","Testapi","","","根据素材id查询素材数据",""
+"passed","Wed Sep 20 17:40:26 CST 2023","Wed Sep 20 17:40:26 CST 2023","420","TestCase.Api_test","test_api","Testapi","","","根据广告名称（es中包含包含该词组）
+查询授权账号信息",""
+"passed","Wed Sep 20 17:40:18 CST 2023","Wed Sep 20 17:40:19 CST 2023","1123","TestCase.Api_test","test_api","Testapi","","","查询素材管理数据列表",""
+"passed","Wed Sep 20 17:40:10 CST 2023","Wed Sep 20 17:40:10 CST 2023","165","TestCase.Api_test","test_api","Testapi","","","用户登录
+-账号密码为空",""
+"passed","Wed Sep 20 17:40:24 CST 2023","Wed Sep 20 17:40:24 CST 2023","422","TestCase.Api_test","test_api","Testapi","","","根据广告id查询授权账号信息",""
+"passed","Wed Sep 20 17:40:33 CST 2023","Wed Sep 20 17:40:34 CST 2023","422","TestCase.Api_test","test_api","Testapi","","","根据日期（无效日期—有效日期）
+查询账号数据",""
+"passed","Wed Sep 20 17:40:22 CST 2023","Wed Sep 20 17:40:22 CST 2023","383","TestCase.Api_test","test_api","Testapi","","","根据素材标题（不存在）
+查询素材数据（数据为空）",""
+"passed","Wed Sep 20 17:40:20 CST 2023","Wed Sep 20 17:40:20 CST 2023","341","TestCase.Api_test","test_api","Testapi","","","根据素材id（不存在）
+查询素材数据（数据为空）",""
+"passed","Wed Sep 20 17:40:11 CST 2023","Wed Sep 20 17:40:12 CST 2023","1103","TestCase.Api_test","test_api","Testapi","","","获取用户权限信息",""
+"passed","Wed Sep 20 17:40:19 CST 2023","Wed Sep 20 17:40:19 CST 2023","439","TestCase.Api_test","test_api","Testapi","","","根据素材id
+查询素材数据",""
+"passed","Wed Sep 20 17:40:35 CST 2023","Wed Sep 20 17:40:36 CST 2023","1401","TestCase.Api_test","test_api","Testapi","","","查询素材数据列表",""
+"passed","Wed Sep 20 17:40:23 CST 2023","Wed Sep 20 17:40:23 CST 2023","419","TestCase.Api_test","test_api","Testapi","","","查询授权账号信息列表",""
+"passed","Wed Sep 20 17:40:10 CST 2023","Wed Sep 20 17:40:11 CST 2023","161","TestCase.Api_test","test_api","Testapi","","","用户登录
+-密码长度<6字符",""
+"passed","Wed Sep 20 17:40:10 CST 2023","Wed Sep 20 17:40:10 CST 2023","193","TestCase.Api_test","test_api","Testapi","","","用户登录
+-账号为空",""
+"passed","Wed Sep 20 17:40:24 CST 2023","Wed Sep 20 17:40:25 CST 2023","419","TestCase.Api_test","test_api","Testapi","","","根据广告名称查询授权账号信息",""
+"passed","Wed Sep 20 17:40:21 CST 2023","Wed Sep 20 17:40:22 CST 2023","452","TestCase.Api_test","test_api","Testapi","","","根据素材标题
+查询素材数据",""
+"passed","Wed Sep 20 17:40:25 CST 2023","Wed Sep 20 17:40:25 CST 2023","348","TestCase.Api_test","test_api","Testapi","","","根据账号id（不存在）
+查询授权账号信息（数据为空）",""
+"passed","Wed Sep 20 17:40:09 CST 2023","Wed Sep 20 17:40:10 CST 2023","609","TestCase.Api_test","test_api","Testapi","","","用户登录
+-密码错误",""
+"passed","Wed Sep 20 17:40:32 CST 2023","Wed Sep 20 17:40:33 CST 2023","370","TestCase.Api_test","test_api","Testapi","","","根据日期查（不在有效日期内）
+询账号数据",""
+"passed","Wed Sep 20 17:40:26 CST 2023","Wed Sep 20 17:40:27 CST 2023","933","TestCase.Api_test","test_api","Testapi","","","查询计划数据列表",""
+"passed","Wed Sep 20 17:40:15 CST 2023","Wed Sep 20 17:40:18 CST 2023","2576","TestCase.Api_test","test_api","Testapi","","","修改个人信息",""
+"passed","Wed Sep 20 17:40:27 CST 2023","Wed Sep 20 17:40:27 CST 2023","357","TestCase.Api_test","test_api","Testapi","","","根据计划日期查询计划数据",""
+"passed","Wed Sep 20 17:40:30 CST 2023","Wed Sep 20 17:40:31 CST 2023","176","TestCase.Api_test","test_api","Testapi","","","根据计划日期（合法日期-非法日期）
+查询计划数据",""
+"passed","Wed Sep 20 17:40:20 CST 2023","Wed Sep 20 17:40:21 CST 2023","1383","TestCase.Api_test","test_api","Testapi","","","根据广告id（不存在）
+查询素材数据（数据为空）",""
+"passed","Wed Sep 20 17:40:10 CST 2023","Wed Sep 20 17:40:10 CST 2023","186","TestCase.Api_test","test_api","Testapi","","","用户登录
+-密码为空",""
+"passed","Wed Sep 20 17:40:30 CST 2023","Wed Sep 20 17:40:30 CST 2023","437","TestCase.Api_test","test_api","Testapi","","","根据计划日期（有效日期-无效日期）
+查询计划数据",""
+"passed","Wed Sep 20 17:40:25 CST 2023","Wed Sep 20 17:40:25 CST 2023","376","TestCase.Api_test","test_api","Testapi","","","根据广告id（不存在）
+查询授权账号信息（数据为空）",""
+"passed","Wed Sep 20 17:40:28 CST 2023","Wed Sep 20 17:40:29 CST 2023","343","TestCase.Api_test","test_api","Testapi","","","根据计划日期（不在有效日期内）
+查询计划数据",""
+"passed","Wed Sep 20 17:40:08 CST 2023","Wed Sep 20 17:40:09 CST 2023","931","TestCase.Api_test","test_api","Testapi","","","用户登录",""
+"passed","Wed Sep 20 17:40:29 CST 2023","Wed Sep 20 17:40:29 CST 2023","349","TestCase.Api_test","test_api","Testapi","","","根据计划id(不存在)
+查询计划数据",""
+"passed","Wed Sep 20 17:40:25 CST 2023","Wed Sep 20 17:40:26 CST 2023","372","TestCase.Api_test","test_api","Testapi","","","根据广告名称（不存在）
+查询授权账号信息（数据为空）",""
+"passed","Wed Sep 20 17:40:31 CST 2023","Wed Sep 20 17:40:31 CST 2023","386","TestCase.Api_test","test_api","Testapi","","","查询账号数据列表",""
+"passed","Wed Sep 20 17:40:19 CST 2023","Wed Sep 20 17:40:20 CST 2023","412","TestCase.Api_test","test_api","Testapi","","","根据广告id
+查询素材数据",""
+"passed","Wed Sep 20 17:40:33 CST 2023","Wed Sep 20 17:40:33 CST 2023","367","TestCase.Api_test","test_api","Testapi","","","根据广告id（不存在）
+查询账号数据（数据为空）",""
+"passed","Wed Sep 20 17:40:23 CST 2023","Wed Sep 20 17:40:24 CST 2023","420","TestCase.Api_test","test_api","Testapi","","","根据账号id查询授权账号信息",""

@@ -4,6 +4,7 @@ import pytest
 import requests
 import json as json_util
 from config.config_util import get_yaml_config
+from common.excle_export import write_case_result
 
 
 class BaseApi:
@@ -27,8 +28,19 @@ class BaseApi:
         else:
             self.logger.error("请求失败，没接收到返回值，请检查用例格式是否填写正确")
 
-    def api(self, case_num, case_title, method, url,  parameter_type,
-            assertion_condition=None, headers=None, request_data=None):
+    def api(self, data, sheet_name):
+        # def api(self, case_num, case_title, method, url, parameter_type,
+        #         assertion_condition=None, headers=None, request_data=None, sheet_name=None):
+        # 用例数据
+        case_num = data[0]  # 用例编号
+        case_title = data[1]  # 用例标题
+        headers = data[2]   # 请求头
+        method = data[3]  # 请求方法
+        url = data[4]  # 请求路径
+        parameter_type = data[5]  # 参数类型
+        request_data = data[6]  # 请求参数
+        assertion_condition = data[7]  # 断言
+        case_status = data[8]   # 状态
         """
         get、post通用api
         :param case_num: 测试用例编号
@@ -36,15 +48,21 @@ class BaseApi:
         :param method: 请求方法
         :param url: 请求路径
         :param parameter_type: 参数类型
-        :param assertion_message: 断言警告信息
         :param assertion_condition: 断言
         :param headers: 请求头
         :param request_data: 请求参数
+        :param sheet_name: 工作表名
+        :param data: data
         :return:
         """
+        # 测试数据excel所在路径
+        path = get_yaml_config('test_excel_data', 'path')
         # 在请求头中设置token
         token = get_yaml_config('API', 'token')
-        headers = json_util.loads(headers)
+        try:
+            headers = json_util.loads(headers)
+        except:
+            write_case_result(path, sheet_name, case_num, case_status='failed')
         headers['Authorization'] = f'Bearer {token}'
 
         # 拼接请求地址 环境地址 + 请求路径
@@ -92,6 +110,11 @@ class BaseApi:
                 condition = assertion.get('condition')
                 message = assertion.get('message')
                 if condition is not None:
-                    assert eval(condition), message
+                    try:
+                        assert eval(condition), message
+                        write_case_result(path, sheet_name, case_num, case_status='pass')
+                    except AssertionError as e:
+                        write_case_result(path, sheet_name, case_num, case_status='failed')
+                        raise e
         return result
 

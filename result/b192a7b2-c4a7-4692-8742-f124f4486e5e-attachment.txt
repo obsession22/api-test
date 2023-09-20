@@ -1,0 +1,13 @@
+INFO     测试:conftest.py:51 ----------测试用例执行开始----------
+INFO     测试:base_api.py:75 用例编号：test-3
+INFO     测试:base_api.py:76 用例标题：根据计划id查询计划数据
+INFO     测试:base_api.py:78 断言表达式：[{"condition":"result.json()['code'] == 200","message":"code不为200"},{"condition":"len(result.json()['data'])>0","message":"data不为0"}]
+INFO     测试:base_api.py:80 参数类型：params
+INFO     测试:base_api.py:83 请求参数：{"page":"1",
+"pageSize":"10",
+"cdp_promotion_id":"7275263344704897060",
+"plan_name":""}
+INFO     测试:base_api.py:84 请求类型：GET
+INFO     测试:base_api.py:85 请求地址：http://xctestadmin.xczxwe.com//prod/oc/planStatistics/index
+INFO     测试:base_api.py:26 接口返回值：{'success': True, 'message': '请求成功', 'code': 200, 'data': {'items': [{'cdp_promotion_id': '7275263344704897060', 'sum_click_cnt': 1502, 'sum_convert_cnt': 104, 'sum_show_cnt': 70199, 'sum_stat_cost': '19008.61', 'plan_name': '销售线索-8.30-高价-39140-天降龙医【常规】有转化素材改_05_04'}], 'pageInfo': {'total': 1, 'currentPage': '1', 'totalPage': 1}}}
+INFO     测试:conftest.py:56 ----------测试用例执行结束----------
