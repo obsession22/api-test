@@ -7,10 +7,14 @@
 @Motto:Don't ever let somebody tell you you can't do something
 """
 
+import Api.base_api
 import coloredlogs
 import openpyxl
 import pytest
+import config.config_util
 from selenium import webdriver
+
+from utils import config_util
 from utils.logger_util import LoggerUtil
 from utils.config_util import get_config_browser
 from common.excle_export import excle_read
@@ -56,10 +60,13 @@ def api_log():
     logger.info("----------测试用例执行结束----------\n")
     lu.remove_handler()
 
+# 登录接口依赖
+@pytest.fixture(name='login_data')
+@pytest.mark.parametrize('yml_data', config_util.read_yaml_file())
+def test_data(yml_data):
+    return Api.BaseApi.pre_api(yml_data)
 
-@pytest.fixture(name='test_data')
-def test_data():
-    excle_read()
+
 
 
 #

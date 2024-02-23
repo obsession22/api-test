@@ -1,3 +1,152 @@
+# curl 'http://www.xinfadi.com.cn/getPriceData.html'
+#  -H 'Accept: */*'
+#  -H 'Accept-Language: zh-CN,zh;q=0.9'
+#  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8'
+#  -H 'Origin: http://www.xinfadi.com.cn'
+#  -H 'Proxy-Connection: keep-alive'
+#  -H 'Referer: http://www.xinfadi.com.cn/priceDetail.html'
+#  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'X-Requested-With: XMLHttpRequest'
+#  --data-raw 'limit=&current=&pubDateStartTime=&pubDateEndTime=&prodPcatid=&prodCatid=&prodName='
+#  --compressed \
+POST http://www.xinfadi.com.cn/getPriceData.html
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.9
+Origin: http://www.xinfadi.com.cn
+Proxy-Connection: keep-alive
+Referer: http://www.xinfadi.com.cn/priceDetail.html
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+X-Requested-With: XMLHttpRequest
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+
+limit=100&current=&pubDateStartTime=&pubDateEndTime=&prodPcatid=&prodCatid=&prodName=
+
+###
+
+# curl 'https://www.58pic.com/index.php?m=indexApi&a=getMainHeadData'
+#  -H 'authority: www.58pic.com'
+#  -H 'accept: application/json, text/javascript, */*; q=0.01'
+#  -H 'accept-language: zh-CN,zh;q=0.9'
+#  -H 'cookie: qt_visitor_id=%22bf308760bcaea4f4155298b28b6734c5%22; qt_uid=0; qt_type=0; did=%222fc3aaa5022cbf53%22; history_did_data_2fc3aaa5022cbf53=%22eyJkaXN0aW5jdF9pZCI6IjJmYzNhYWE1MDIyY2JmNTMiLCJ1dG1fY2FtcGFpZ24iOjAsInV0bV9zb3VyY2UiOjAsInV0bV9tZWRpdW0iOjAsInV0bV90ZXJtIjowLCJ1dG1fY29udGVudCI6MCwidGlkIjowfQ%3D%3D%22; qiantudata2018jssdkcross=%7B%22distinct_id%22%3A%2218abb07a31545f-0a15809f29587e-26031f51-2073600-18abb07a316ec3%22%7D; qtjssdk_2018_cross_new_user=1; token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjAsImlhdCI6MTY5NTM1NDk1NCwiZXhwIjoxNjk1MzYyMTU0fQ.iQqrM2x_8Qdy0jrsM1kZALS87oaZ9eglKtcwTpgMYfs; FIRSTVISITED=1695354958.279; Hm_lvt_41d92aaaf21b7b22785ea85eb88e7cea=1695354958; Hm_lvt_644763986e48f2374d9118a9ae189e14=1695354958; imgCodeKey=%226ed71d2e5a18ff62c520b38bbb49a81a%22; tid_today_data_2fc3aaa5022cbf53_20230922=%22eyJub1RvZGF5RGlkIjoxfQ%3D%3D%22; token0=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjAsImlhdCI6MTY5NTM1NDk3MCwiZXhwIjoxNjk1MzYyMTcwfQ.kgiK156UX1usTZMmTHwcxPetReJ_x9v0I7kNbddH5AE; Hm_lpvt_644763986e48f2374d9118a9ae189e14=1695354973; qt_utime=1695354978; public_property=%22eyJ1aWQiOjAsImxpYiI6InBocCIsImxpYl92ZXJzaW9uIjoiMS4wIiwiZXF1aXAiOjEsImRpc3RpbmN0X2lkIjoiMmZjM2FhYTUwMjJjYmY1MyIsImV2ZW50X25hbWUiOiIiLCJzZXJ2ZXJfYWdlbnQiOiJNb3ppbGxhXC81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXRcLzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZVwvMTE2LjAuMC4wIFNhZmFyaVwvNTM3LjM2IiwidXJsIjoiaHR0cDpcL1wvd3d3LjU4cGljLmNvbVwvIiwidGltZSI6MTY5NTM1NDk3OCwiY2xpZW50X2lwIjoiMTQuMTkuMTcuMjE4Iiwib3MiOiJXaW5kb3dzIDEwIiwiYnJvd3NlciI6IkNocm9tZSIsImJyb3dzZXJfdmVyc2lvbiI6IjExNi4wLjAuMCIsInJlZmVycmVyIjoiIiwibGF0ZXN0X3RyYWZmaWNfc291cmNlX3R5cGUiOm51bGwsImxhdGVzdF9yZWZlcnJlciI6bnVsbCwibGF0ZXN0X3JlZmVycmVyX2hvc3QiOm51bGwsImxhdGVzdF9zZWFyY2hfa2V5d29yZCI6bnVsbCwibGF0ZXN0X3V0bV9tZWRpdW0iOm51bGwsImxhdGVzdF91dG1fY2FtcGFpZ24iOm51bGwsImxhdGVzdF91dG1fdGVybSI6bnVsbCwibGF0ZXN0X3V0bV9zb3VyY2UiOm51bGwsImxhdGVzdF90aWQiOm51bGwsImxhdGVzdF91dG1fY29udGVudCI6bnVsbCwicXlfaWQiOjAsInVzZXJfc3RhdHVzIjoxLCJ0aWQiOjAsInV0bV9zb3VyY2UiOjAsInV0bV9tZWRpdW0iOjAsInV0bV9jYW1wYWlnbiI6MCwidXRtX2NvbnRlbnQiOjAsInV0bV90ZXJtIjowfQ%3D%3D%22; Hm_lpvt_41d92aaaf21b7b22785ea85eb88e7cea=1695354980; big_data_visit_time=1695354978'
+#  -H 'referer: https://www.58pic.com/'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Windows"'
+#  -H 'sec-fetch-dest: empty'
+#  -H 'sec-fetch-mode: cors'
+#  -H 'sec-fetch-site: same-origin'
+#  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  -H 'x-requested-with: XMLHttpRequest'
+#  --compressed
+GET https://www.58pic.com/index.php?m=indexApi&a=getMainHeadData
+authority: www.58pic.com
+accept: application/json, text/javascript, */*; q=0.01
+accept-language: zh-CN,zh;q=0.9
+cookie: qt_visitor_id=%22bf308760bcaea4f4155298b28b6734c5%22; qt_uid=0; qt_type=0; did=%222fc3aaa5022cbf53%22; history_did_data_2fc3aaa5022cbf53=%22eyJkaXN0aW5jdF9pZCI6IjJmYzNhYWE1MDIyY2JmNTMiLCJ1dG1fY2FtcGFpZ24iOjAsInV0bV9zb3VyY2UiOjAsInV0bV9tZWRpdW0iOjAsInV0bV90ZXJtIjowLCJ1dG1fY29udGVudCI6MCwidGlkIjowfQ%3D%3D%22; qiantudata2018jssdkcross=%7B%22distinct_id%22%3A%2218abb07a31545f-0a15809f29587e-26031f51-2073600-18abb07a316ec3%22%7D; qtjssdk_2018_cross_new_user=1; token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjAsImlhdCI6MTY5NTM1NDk1NCwiZXhwIjoxNjk1MzYyMTU0fQ.iQqrM2x_8Qdy0jrsM1kZALS87oaZ9eglKtcwTpgMYfs; FIRSTVISITED=1695354958.279; Hm_lvt_41d92aaaf21b7b22785ea85eb88e7cea=1695354958; Hm_lvt_644763986e48f2374d9118a9ae189e14=1695354958; imgCodeKey=%226ed71d2e5a18ff62c520b38bbb49a81a%22; tid_today_data_2fc3aaa5022cbf53_20230922=%22eyJub1RvZGF5RGlkIjoxfQ%3D%3D%22; token0=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjAsImlhdCI6MTY5NTM1NDk3MCwiZXhwIjoxNjk1MzYyMTcwfQ.kgiK156UX1usTZMmTHwcxPetReJ_x9v0I7kNbddH5AE; Hm_lpvt_644763986e48f2374d9118a9ae189e14=1695354973; qt_utime=1695354978; public_property=%22eyJ1aWQiOjAsImxpYiI6InBocCIsImxpYl92ZXJzaW9uIjoiMS4wIiwiZXF1aXAiOjEsImRpc3RpbmN0X2lkIjoiMmZjM2FhYTUwMjJjYmY1MyIsImV2ZW50X25hbWUiOiIiLCJzZXJ2ZXJfYWdlbnQiOiJNb3ppbGxhXC81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXRcLzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZVwvMTE2LjAuMC4wIFNhZmFyaVwvNTM3LjM2IiwidXJsIjoiaHR0cDpcL1wvd3d3LjU4cGljLmNvbVwvIiwidGltZSI6MTY5NTM1NDk3OCwiY2xpZW50X2lwIjoiMTQuMTkuMTcuMjE4Iiwib3MiOiJXaW5kb3dzIDEwIiwiYnJvd3NlciI6IkNocm9tZSIsImJyb3dzZXJfdmVyc2lvbiI6IjExNi4wLjAuMCIsInJlZmVycmVyIjoiIiwibGF0ZXN0X3RyYWZmaWNfc291cmNlX3R5cGUiOm51bGwsImxhdGVzdF9yZWZlcnJlciI6bnVsbCwibGF0ZXN0X3JlZmVycmVyX2hvc3QiOm51bGwsImxhdGVzdF9zZWFyY2hfa2V5d29yZCI6bnVsbCwibGF0ZXN0X3V0bV9tZWRpdW0iOm51bGwsImxhdGVzdF91dG1fY2FtcGFpZ24iOm51bGwsImxhdGVzdF91dG1fdGVybSI6bnVsbCwibGF0ZXN0X3V0bV9zb3VyY2UiOm51bGwsImxhdGVzdF90aWQiOm51bGwsImxhdGVzdF91dG1fY29udGVudCI6bnVsbCwicXlfaWQiOjAsInVzZXJfc3RhdHVzIjoxLCJ0aWQiOjAsInV0bV9zb3VyY2UiOjAsInV0bV9tZWRpdW0iOjAsInV0bV9jYW1wYWlnbiI6MCwidXRtX2NvbnRlbnQiOjAsInV0bV90ZXJtIjowfQ%3D%3D%22; Hm_lpvt_41d92aaaf21b7b22785ea85eb88e7cea=1695354980; big_data_visit_time=1695354978
+referer: https://www.58pic.com/
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+x-requested-with: XMLHttpRequest
+
+###
+
+# curl 'https://freeupdateme.com/'
+#  -H 'authority: freeupdateme.com'
+#  -H 'accept: */*'
+#  -H 'accept-language: zh-CN,zh;q=0.9'
+#  -H 'access-control-allow-origin: *'
+#  -H 'content-type: application/json'
+#  -H 'origin: https://freeupdateme.com'
+#  -H 'referer: https://freeupdateme.com/'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Windows"'
+#  -H 'sec-fetch-dest: empty'
+#  -H 'sec-fetch-mode: cors'
+#  -H 'sec-fetch-site: same-origin'
+#  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  --data-raw '{"body":"{\"yourInputText\":\"1\"}"}'
+#  --compressed
+#POST https://freeupdateme.com/
+#authority: freeupdateme.com
+#accept: */*
+#accept-language: zh-CN,zh;q=0.9
+#access-control-allow-origin: *
+#origin: https://freeupdateme.com
+#referer: https://freeupdateme.com/
+#sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+#sec-ch-ua-mobile: ?0
+#sec-ch-ua-platform: "Windows"
+#sec-fetch-dest: empty
+#sec-fetch-mode: cors
+#sec-fetch-site: same-origin
+#user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+#Content-Type: application/json
+#
+#{"body":"{"yourInputText":"1"}"}
+
+###
+
+# curl 'https://freeupdateme.com/'
+#  -H 'authority: freeupdateme.com'
+#  -H 'accept: */*'
+#  -H 'accept-language: zh-CN,zh;q=0.9'
+#  -H 'access-control-allow-origin: *'
+#  -H 'content-type: application/json'
+#  -H 'origin: https://freeupdateme.com'
+#  -H 'referer: https://freeupdateme.com/'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Windows"'
+#  -H 'sec-fetch-dest: empty'
+#  -H 'sec-fetch-mode: cors'
+#  -H 'sec-fetch-site: same-origin'
+#  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  --data-raw '{"body":"{\"yourInputText\":\"2\"}"}'
+#  --compressed
+#POST https://freeupdateme.com/
+#authority: freeupdateme.com
+#accept: */*
+#accept-language: zh-CN,zh;q=0.9
+#access-control-allow-origin: *
+#origin: https://freeupdateme.com
+#referer: https://freeupdateme.com/
+#sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+#sec-ch-ua-mobile: ?0
+#sec-ch-ua-platform: "Windows"
+#sec-fetch-dest: empty
+#sec-fetch-mode: cors
+#sec-fetch-site: same-origin
+#user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+#Content-Type: application/json
+#
+#{"body":"{"yourInputText":"2"}"}
+####
+
+# curl 'https://freeupdateme.com/'
+#  -H 'authority: freeupdateme.com'
+#  -H 'accept: */*'
+#  -H 'accept-language: zh-CN,zh;q=0.9'
+#  -H 'access-control-allow-origin: *'
+#  -H 'content-type: application/json'
+#  -H 'origin: https://freeupdateme.com'
+#  -H 'referer: https://freeupdateme.com/'
+#  -H 'sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Windows"'
+#  -H 'sec-fetch-dest: empty'
+#  -H 'sec-fetch-mode: cors'
+#  -H 'sec-fetch-site: same-origin'
+#  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+#  --data-raw '{"body":"{\"yourInputText\":\"2\"}"}' \
+
+###
+
 # curl 'http://admin.xczxwe.com/admin.user/login'
 #  -H 'Accept: application/json, text/javascript, */*; q=0.01'
 #  -H 'Accept-Language: zh-CN,zh;q=0.9'

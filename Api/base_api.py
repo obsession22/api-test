@@ -1,4 +1,6 @@
 # -*- coding:utf-8 -*-
+import json
+
 import allure
 import pytest
 import requests
@@ -28,6 +30,7 @@ class BaseApi:
         else:
             self.logger.error("请求失败，没接收到返回值，请检查用例格式是否填写正确")
 
+    # 单接口
     def api(self, data, sheet_name):
         # def api(self, case_num, case_title, method, url, parameter_type,
         #         assertion_condition=None, headers=None, request_data=None, sheet_name=None):
@@ -118,3 +121,30 @@ class BaseApi:
                         raise e
         return result
 
+    # 多业务接口
+    def apis(self, pre_data, data, sheet_name):
+
+        # 依赖的前置参数
+        pre_data_list = pre_data
+
+        req = {}
+        # 提取前置请求到依赖参数
+        for name in data.pre:
+            req[name] = pre_data_list[name]
+        # 判断请求体是否为空，为空则前置参数作为请求体
+            # 前置参数填入请求体（字典添加字典）
+
+    # 前置接口
+    def pre_api(self,data):
+
+        # 请求方式
+        method = ""
+        # 请求地址
+        url = ""
+        # 请求头
+        headers = ""
+        # 请求参数
+        data = ""
+        
+        # 响应信息
+        return self.send_request()

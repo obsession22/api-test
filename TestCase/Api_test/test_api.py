@@ -86,3 +86,4 @@ class Testapi:
         sheet_name = '查询素材数据'
         api = BaseApi(api_log)
         result = api.api(data, sheet_name).json()
+

@@ -17,6 +17,15 @@ def get_project_path():
     realpath = os.path.dirname(os.path.dirname(__file__))
     return realpath
 
+# 读取全部的yml数据
+def read_yaml_file(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        try:
+            yaml_data = yaml.safe_load(file)
+            return yaml_data
+        except yaml.YAMLError as e:
+            print(f"Error while parsing YAML file: {e}")
+
 
 # 读取yaml配置文件
 def get_yaml_config(one_name,two_name):
@@ -25,6 +34,7 @@ def get_yaml_config(one_name,two_name):
         # cfg = yaml.load(f.read(), Loader=yaml.FullLoader)
         cfg = yaml.safe_load(f.read())
         return cfg[one_name][two_name]
+
 
 # 获得配置文件config.yaml中的浏览器信息，返回driver对象。
 def get_config_browser():
@@ -42,5 +52,7 @@ def get_config_browser():
 
 
 if __name__ == '__main__':
-    print(get_project_path())
-    print(get_yaml_config("browser","browser_name"))
+    # print(get_project_path())
+    # print(get_yaml_config("browser","browser_name"))
+    data1 = read_yaml_file(r"C:\UIauto\WebUIAutoTest-master\data\locator_yml\test.yml")
+    print(data1[1]["name"])
