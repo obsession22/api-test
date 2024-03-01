@@ -61,10 +61,10 @@ def api_log():
     lu.remove_handler()
 
 # 登录接口依赖
-@pytest.fixture(name='login_data')
-@pytest.mark.parametrize('yml_data', config_util.read_yaml_file())
-def test_data(yml_data):
-    return Api.BaseApi.pre_api(yml_data)
+# @pytest.fixture(name='login_data')
+# @pytest.mark.parametrize('yml_data', config_util.read_yaml_file())
+# def test_data(yml_data):
+#     return Api.BaseApi.pre_api(yml_data)
 
 
 

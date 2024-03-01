@@ -1,16 +1,30 @@
-- name: login_button
-  locator_type: id
-  locator_value: loginButton
-  action: click
+- casename: test001
+  case_title: "测试"
+  requset_method: POST
+  url:  "https://www.wanandroid.com/user/login"
+  headers:
+#    Content-Type: application/json
+  request_data:  # 请求参数
+    username: sanhai
+    password: 123456
+  extract:
+    cookie: $.cookie
+  validate:
+    - equal_to:
+        .data.id: 159395
+    - equal_to:
+        .errorCode: 0
 
-- name: username_input
-  locator_type: xpath
-  locator_value: //input[@id='username']
-  action: input
-  value: username
+#[{'equal_to': {'errorCode': 1}}, {'equal_to': {'errorCode': 0}}]
 
-- name: password_input
-  locator_type: css
-  locator_value: input#password
-  action: input
-  value: password
+- casename: "test002"
+  case_title: "积分"
+  requset_method: GET
+  url:  "https://www.wanandroid.com/lg/coin/userinfo/json"
+  headers:
+  request_data:
+  cookie:
+
+
+
+

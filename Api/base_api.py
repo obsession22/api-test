@@ -7,28 +7,25 @@ import requests
 import json as json_util
 from config.config_util import get_yaml_config
 from common.excle_export import write_case_result
+from utils.utils import Utils
 
 
 class BaseApi:
     def __init__(self, logger):
         self.logger = logger
 
-    def send_request(self, method, url, headers=None, params=None, data=None, json=None):
+    def send_request(method, url, headers=None, params=None, data=None, json=None, cookies=None):
         request_methods = {
             "GET": requests.get,
             "POST": requests.post,
         }
         request_func = request_methods[method]
-        result = request_func(url, headers=headers, params=params, data=data, json=json)
+        result = request_func(url, headers=headers, params=params, data=data, json=json, cookies=cookies)
 
         if method not in request_methods:
             raise ValueError("无效的请求方式: {}".format(method))
 
-        if result is not None:
-            self.logger.info("接口返回值：" + str(result.json()))
-            return result
-        else:
-            self.logger.error("请求失败，没接收到返回值，请检查用例格式是否填写正确")
+        return result
 
     # 单接口
     def api(self, data, sheet_name):
@@ -120,6 +117,38 @@ class BaseApi:
                         write_case_result(path, sheet_name, case_num, case_status='failed')
                         raise e
         return result
+
+    # new
+    def base_api(data, api_log):
+
+        # 用例数据
+        case_num = data['casename']  # 用例编号
+        case_title = data['case_title']  # 用例标题
+        headers = data['headers']   # 请求头
+        method = data['requset_method']  # 请求方法
+        url = data['url']  # 请求路径
+        request_data = data['request_data']  # 请求参数
+        api_log.info("用例数据")
+        api_log.info(data)
+        # 用例标题
+        allure.dynamic.title(case_title)
+
+        data0_case = Utils.handle_request_data(data)
+        cookies = {}
+        # cookies 设置
+        if 'cookie' in data0_case:
+            cookies = Utils.cookie
+        result = BaseApi.send_request(method=method, url=url, headers=headers, data=request_data, cookies=cookies)
+        # 前置参数提取
+        if 'extract' in data0_case:
+            Utils.extract(data0_case['extract'], result)
+        # 断言
+        if 'validate' in data0_case:
+            list = data0_case['validate']
+            print(list)
+            Utils.validate(list, result.json(), api_log)
+
+        return result.json()
 
     # 多业务接口
     def apis(self, pre_data, data, sheet_name):
