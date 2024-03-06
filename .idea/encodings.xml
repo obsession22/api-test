@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/data/locator_yml/data.yml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/data/locator_yml/login_page.yaml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/data/locator_yml/user_page.yaml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/data/locator_yml/元素操作说明文档.yaml" charset="GBK" />
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/data/test_demo/元素操作说明文档.yaml" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>

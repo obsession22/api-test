@@ -1,1 +1,15 @@
-{"total":1,"items":[{"uid":"25f2bd98b28533624e82d79e6e468cd7","name":"后台模块api","statistic":{"failed":0,"broken":0,"skipped":0,"passed":9,"unknown":0,"total":9}}]}
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "b163921928a68a9b1bf4f00833ab5e03",
+    "name" : "业务模块：登录查询流程",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  } ]
+}

@@ -1,0 +1,49 @@
+- case_name: test001
+  case_title: "登录"
+  api_name: 登录接口11
+  description: 输入账号密码，登录个人账号
+  request_method: POST
+  url:  "https://www.wanandroid.com/user/login"
+  headers:
+#    Content-Type: application/json
+  request_data:  # 请求参数
+    username: sanhai
+    password: 123456
+  extract:
+    cookie: $.cookie
+    login_name: $.data.nickname
+  validate:
+    - equal_to:
+        .data.id: 159395
+        .data.admin: false
+        .data.nickname: sanhai
+    - equal_to:
+        .errorCode: 0
+
+#[{'equal_to': {'errorCode': 1}}, {'equal_to': {'errorCode': 0}}]
+
+- case_name: "test002"
+  case_title: "积分"
+  api_name: 获取积分接口
+  description: 通过个人账号查询个人积分情况
+  request_method: GET
+  url:  "https://www.wanandroid.com/lg/coin/userinfo/json"
+  headers:
+  request_data:
+  cookie: ${cookie}
+
+- case_name: test003
+  case_title: "登录"
+  api_name: 登录接口11
+  description: 输入账号密码，登录个人账号
+  request_method: POST
+  url:  "https://www.wanandroid.com/user/login"
+  headers:
+#    Content-Type: application/json
+  request_data:  # 请求参数
+    username: ${login_name}
+    password: 123456
+  validate:
+    - equal_to:
+        .errorCode: 0
+

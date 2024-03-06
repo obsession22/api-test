@@ -5,6 +5,7 @@ pytest-rerunfailures
 pytest-ordering
 allure-pytest
 PyYAML
-selenium
 requests
 openpyxl
+PYHamcrest
+pytest-json-report

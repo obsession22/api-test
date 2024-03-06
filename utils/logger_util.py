@@ -1,17 +1,10 @@
-"""
-#!/usr/bin/env python
-# -*- coding:utf-8 -*-
-@File : logger_util.py
-@Author : putongrenji
-@Time : 2022/4/29 18:23
-@Motto:Don't ever let somebody tell you you can't do something
-"""
+
 import logging
 import time
 
 import coloredlogs as coloredlogs
 
-from config.config_util import get_project_path, get_yaml_config
+from utils.config_util import get_project_path, get_yaml_config
 
 
 class LoggerUtil:

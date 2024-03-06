@@ -1,5 +1,5 @@
-# WebUIAutoTest
-Selenium+Pytest+POM搭建的WebUI自动化测试框架
+# 版本要求
+python3.910 allure 2.17.3
 
 ## 运行步骤
 1. 安装requirements文件的依赖<br>

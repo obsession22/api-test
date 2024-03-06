@@ -1,0 +1,42 @@
+# 多接口数据依赖的情况，测试用例编写如下：
+- case_name:  #测试用例名称
+  case_title: #测试用例标题
+  api_name: #接口名称 （多业务接口需写在这里，单接口在测试用例代码中使用 @allure.story() 填入即可）
+  description: #接口描述
+  request_method: #请求方式
+  url:  #请求地址
+  headers: #请求头 如下
+#    Content-Type: application/json
+#    JWT_Token: xxxxxx
+  request_data:  # 请求参数
+#    username: sanhai
+#    password: 123456
+  extract: # 提取返回值的参数
+# 这里的key不能重复，不然存储的参数会出问题
+    cookie: $.cookie
+    login_name: $.data.nickname
+  validate:  # 断言方式
+    - equal_to: # 匹配相等对象
+        .data.id: 159395
+        .data.admin: false
+        .data.nickname: sanhai
+    - less_than: # 比较大小
+        .xxx: xxx
+    - greater_than: # 比较大小
+        .xxx: xxx
+    - has_length: # 长度匹配 len()
+    - has_string: # 匹配字符串 str()
+    - greater_than_or_equal_to: # 》
+    - less_than_or_equal_to:  # 《
+
+- case_name: "test002"
+  case_title:
+  api_name:
+  description:
+  request_method:
+  url:
+  headers:
+  request_data:
+  cookie: {cookie} # 依赖数据的填写方式 {data_name} 需要保证依赖的数据的接口写在此接口前面
+
+

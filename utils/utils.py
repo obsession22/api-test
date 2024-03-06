@@ -1,7 +1,6 @@
 import json
 
 import re
-
 from hamcrest import *
 
 
@@ -83,14 +82,11 @@ class Utils:
             "less_than_or_equal_to": less_than_or_equal_to,
         }
 
-        #
+        #[{'equal_to': {'.data.id': 159395, '.data.admin': False, '.data.nickname': 'sanhai'}}, {'equal_to': {'.errorCode': 0}}]
         for validate in validate_list:
-
+            #'equal_to' {'.data.id': 159395, '.data.admin': False, '.data.nickname': 'sanhai'}
             for key, item in validate.items():
-                print(key, item)
                 for key_json_path, item_expect in item.items():
-
-                    print(key_json_path)
                     # key_json_path 是断言的目标 如（$.data.id）等等
                     # 通过测试用例中的断言参数，从response中提取对应的值
                     # actual_val 从实际接口返回断言参数的值
@@ -98,6 +94,8 @@ class Utils:
                     actual_val = Utils.get_value_from_response(key_json_path, response)
 
                     if key in assertions:
+                        # 执行断言 key_json_path + item_expect + key_json_path + key +actual_val
+                        log.info("执行断言"+key_json_path+"="+str(item_expect)+" "+key+" "+key_json_path+"="+str(actual_val))
                         assert_func = assertions[key]
                         assert_that(actual_val, assert_func(item_expect))
                     else:

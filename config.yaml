@@ -1,12 +1,3 @@
-API:
-  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkZWZhdWx0XzE1IiwiaWF0IjoxNjk1MjAzNTkzLjU1NTA5NywibmJmIjoxNjk1MjAzNTkzLjU1NTA5NywiZXhwIjoxNjk1MjEwNzkzLjU1NTA5NywiaWQiOjE1LCJ1c2VybmFtZSI6IuWGr-iLl-W_lyIsInVzZXJfdHlwZSI6IjEwMCIsIm5pY2tuYW1lIjoiMTExIiwicGhvbmUiOiI5NTI3IiwiZW1haWwiOiIyMTMiLCJhdmF0YXIiOm51bGwsInNpZ25lZCI6IjEyMyIsImRhc2hib2FyZCI6bnVsbCwiZGVwdF9pZCI6bnVsbCwic3RhdHVzIjoxLCJsb2dpbl9pcCI6IjExNi4yMS4xMy44NCIsImxvZ2luX3RpbWUiOiIyMDIzLTA5LTA1IDExOjU3OjU1IiwiYmFja2VuZF9zZXR0aW5nIjpudWxsLCJjcmVhdGVkX2J5IjoxLCJ1cGRhdGVkX2J5IjoxNSwiY3JlYXRlZF9hdCI6IjIwMjMtMDktMDEgMDk6NTQ6MTkiLCJ1cGRhdGVkX2F0IjoiMjAyMy0wOS0wNSAxMTo1Nzo1NSIsInJlbWFyayI6bnVsbCwiY29kZSI6IiIsImp3dF9zY2VuZSI6ImRlZmF1bHQifQ.U2VQTyEWt75spD3oFZ0Gtnkrg6TTbIDoPKVNomFw1Ng
-browser:
-  browser_name: chrome
-default_login:
-  password: Ceshi123
-  username: admin
-environment:
-  test_url: http://xctestadmin.xczxwe.com/
 log:
   console_log_format: '[%(asctime)s] %(filename)s->%(funcName)s line:%(lineno)d [%(levelname)s]
     %(message)s'
@@ -17,6 +8,7 @@ log:
   log_name: log_
 report:
   report_name: report_
+
 test_excel_data:
   path: ./data/api_test.xlsx
 url:
